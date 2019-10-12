@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/10 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="第二章 类和对象的创建 1.面向对象的概念面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。 2.类的创建 12语法：public class 类名&amp;#123;&amp;#125;			File---&amp;gt;new---&amp;gt;class---&amp;gt;类名  3.创建对象类名 对象名 =new 类名()；对象名.">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/Java面向对象知识点总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第二章 类和对象的创建 1.面向对象的概念面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。 2.类的创建 12语法：public class 类名&amp;#123;&amp;#125;			File---&amp;gt;new---&amp;gt;class---&amp;gt;类名  3.创建对象类名 对象名 =new 类名()；对象名.">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-12T05:50:47.336Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="第二章 类和对象的创建 1.面向对象的概念面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。 2.类的创建 12语法：public class 类名&amp;#123;&amp;#125;			File---&amp;gt;new---&amp;gt;class---&amp;gt;类名  3.创建对象类名 对象名 =new 类名()；对象名.">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,43 +154,174 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Java面向对象知识点总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/10/Java面向对象知识点总结/" class="archive-article-date">
-  	<time datetime="2019-10-10T08:57:39.814Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        <p>第二章 类和对象的创建</p>
+<p>1.面向对象的概念<br>面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，<br>每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。</p>
+<p>2.类的创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法：public class 类名&#123;&#125;	</span><br><span class="line">		File---&gt;new---&gt;class---&gt;类名</span><br></pre></td></tr></table></figure>
 
+<p>3.创建对象<br>类名 对象名 =new 类名()；<br>对象名.方法名()；对象名.属性<br>4.构造方法：方法名和类名相同，没有返回值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public class 类名&#123;	</span><br><span class="line">	public 类名（）&#123;&#125;//主要作用是初始化操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class 类名&#123;		</span><br><span class="line">	public 类名（）&#123;&#125;		</span><br><span class="line">	public 类名（String name，int age）&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>6.构造方法的执行：<br>new 类名（）；—&gt;执行构造方法<br>super（）；—&gt;执行了父类的构造方法<br>7.static静态修饰符<br>静态修饰符可以修饰属性，方法，代码块<br>类名.属性 类名.方法名<br>8.Java内存（栈和堆，static，方法区，gc（垃圾回收机制））</p>
+<h2 id="第三章-面向对象三大特征—封装"><a href="#第三章-面向对象三大特征—封装" class="headerlink" title="第三章 面向对象三大特征—封装"></a>第三章 面向对象三大特征—封装</h2><p>1.封装的概念<br>封装是指将对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息<br>而是通过该类所提供的方法来实现对内部信息的操作访问<br>2.封装的步骤<br>（1）把属性私有化（private）<br>（2）对这些属性设置get和set方法<br>（3）调用处理这些方法<br>3.封装的作用：避免一些用户不合理的操作<br>4.修饰符<br>（1）public—&gt;公共的：在一个项目中都可以访问，权限最高<br>（2）private—&gt;私有的：只能在本类中进行访问，权限最低<br>（3）protected—&gt;安全的，受保护的：同一个包中才能进行访问，继承中子类可以访问父类<br>（4）default—&gt;默认的：同一个包中能访问</p>
+<h2 id="第四章-面向对象的三大特征—继承"><a href="#第四章-面向对象的三大特征—继承" class="headerlink" title="第四章 面向对象的三大特征—继承"></a>第四章 面向对象的三大特征—继承</h2><p>1.继承的概念<br>子类继承父类的属性，方法。<br>2.继承的关键字：extends<br>3.继承的语法：<br>public class 类名 extends 父类{}<br>4.使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//父类</span><br><span class="line">public void shout()&#123;</span><br><span class="line">	system.out.println(&quot;动物发出叫声&quot;);</span><br><span class="line">&#125;</span><br><span class="line">//子类重写</span><br><span class="line">public viod shout()&#123;		</span><br><span class="line">	system.out.println(&quot;某一种动物发出叫声&quot;);</span><br><span class="line">&#125;</span><br><span class="line">//测试</span><br><span class="line">public static void main(String[]args)&#123;</span><br><span class="line">父类 引用变量名=new 父类();//创建父类的实例对象</span><br><span class="line">引用变量名.shout();//调用父类重写</span><br><span class="line">shout()方法</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.父类构造方法调用：super（）；<br>调用父类的构造方法必须在子类中调用<br>必须在子类构造方法的第一行<br>6.重写@Override<br>必须继承<br>方法名一致，参数个数，顺序，类型全部一致</p>
+<h2 id="第五章-面向对象（多态）"><a href="#第五章-面向对象（多态）" class="headerlink" title="第五章 面向对象（多态）"></a>第五章 面向对象（多态）</h2><p>1.多态的概念<br>指不同类的对象对同一消息做出响应<br>2.多态的必要条件<br>继承<br>重写<br>父类引用指向子类对象（向上转型）<br>3.多态的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Father&#123;</span><br><span class="line"> 			public void cooking()&#123;</span><br><span class="line"> 				System.out.println(&quot;米饭&quot;);</span><br><span class="line"> 			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line">  	public class Son extends Father&#123;</span><br><span class="line"> 			public void cooking()&#123;</span><br><span class="line"> 				System.out.println(&quot;熬粥&quot;);</span><br><span class="line"> 			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		public class Test &#123;</span><br><span class="line">			public static void main(String[] args) &#123;</span><br><span class="line">				Father son=new Son();</span><br><span class="line">				son.cooking();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.向下转型<br>Son son=(Son)father;</p>
+<h2 id="第六章-抽象"><a href="#第六章-抽象" class="headerlink" title="第六章 抽象"></a>第六章 抽象</h2><p>1.抽象的概念<br>抽象就是用程序的逻辑方法和数据结构来模拟现实的世界<br>2.抽象的关键字<br>abstract<br>可以修饰类，可以修饰方法<br>3.抽象的用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//抽象类 		</span><br><span class="line">public abstract class 类名&#123; 		</span><br><span class="line">//抽象方法没有方法体 </span><br><span class="line">public abstract void 方法名();</span><br><span class="line">&#125;</span><br><span class="line">//当父类是抽象类的时候，子类必须重写父类里面的抽象方法</span><br></pre></td></tr></table></figure>
+
+<p>4.final修饰符：最终的<br>修饰变量，修饰方法，修饰类<br>1.当修饰变量时，变量转换成常量，常量的值不能改变<br>final int a=18;//a=18;不能改变,必须给一个初始值<br>2.当修饰方法时，该方法不能被重写<br>3.当修饰类时，该类不能被继承</p>
+<h2 id="第七章-接口"><a href="#第七章-接口" class="headerlink" title="第七章 接口"></a>第七章 接口</h2><p>1.接口的概念<br>接口是一套规范，满足这个规范的设备，就可以将他们组装到一起，也可以实现具体复杂事物但有规律的功能<br>2.接口的关键字<br>interface<br>3.接口的语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">实现接口的关键字  implements  </span><br><span class="line">public interface 接口名&#123;  </span><br><span class="line">//接口是纯抽象类  		</span><br><span class="line">//接口里面的方法都是抽象方法 </span><br><span class="line">void setData();  	</span><br><span class="line">&#125;  </span><br><span class="line">public class Play implements 接口名&#123; </span><br><span class="line">void setData()&#123;  	</span><br><span class="line">	&#125; </span><br><span class="line">&#125;  </span><br><span class="line">public class Test &#123;  </span><br><span class="line">public static void main(String[] args) &#123; </span><br><span class="line">Play play=new Play();  </span><br><span class="line">play.setData();  	</span><br><span class="line">	&#125;  	</span><br><span class="line">&#125;</span><br><span class="line">注意接口可以进行多继承</span><br><span class="line">    public interface 接口名 extends 接口名，接口名&#123;&#125;</span><br><span class="line">    一般用法</span><br><span class="line">    public class 类名 extends 父类 implements 接口，接口&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第八章-集合框架"><a href="#第八章-集合框架" class="headerlink" title="第八章 集合框架"></a>第八章 集合框架</h2><p>1.ArrayList<br>1.用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList list=new ArrayList();</span><br><span class="line">	list.add();//添加数据  	</span><br><span class="line">	list.get();//获取数据</span><br></pre></td></tr></table></figure>
+
+<p>2.Map<br>用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map map=new HasMap();</span><br><span class="line">	map.put(key,value);//key不能重复 </span><br><span class="line">	map.get(key);//获取key对象的value</span><br></pre></td></tr></table></figure>
+
+<p>3.泛型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list=new ArrayList&gt;&lt;String&gt;();</span><br><span class="line">	Map&lt;String,String&gt; map=new HasMap&lt;String,String&gt;(); 							ArrayList&lt;Map&lt;String,String&gt;&gt; list=new ArrayList&gt;&lt;Map&lt;String,String&gt;();</span><br></pre></td></tr></table></figure>
+
+<h2 id="第九章-高级功能-文件操作"><a href="#第九章-高级功能-文件操作" class="headerlink" title="第九章 高级功能-文件操作"></a>第九章 高级功能-文件操作</h2><p>1.文件概述<br>文件是有具体内容或用途的，而文件夹是用来放置这些文件的。文件在java中对应的类是File。File类是IO包中唯一代表磁盘文件本身的对象。通过File来创建，删除，重命名文件。<br>2.流<br>在Java中所读取到的信息，是通过一根管道，输送到数据文件中的。这跟管道中的信息，称之为“流”(Stream)。可以分为字节流和输出流。<br>3.使用FileWrite类写文件示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">	Writer fw=null;    </span><br><span class="line">	try &#123;           </span><br><span class="line">		fw=new FileWriter(&quot;d:/sample.txt&quot;);  </span><br><span class="line">		//写入信息          </span><br><span class="line">		fw.write(&quot;我热爱JAVA编程！&quot;);</span><br><span class="line">		fw.flush();//刷新缓冲区      </span><br><span class="line">	&#125; catch (IOException e) &#123;   </span><br><span class="line">		// TODO: handle exception </span><br><span class="line">		e.printStackTrace();   </span><br><span class="line">	&#125;if (fw!=null) &#123;  </span><br><span class="line">		try &#123;           </span><br><span class="line">			fw.close();     </span><br><span class="line">		&#125; catch (IOException e) &#123; </span><br><span class="line">		// TODO: handle exception   </span><br><span class="line">		e.printStackTrace();    </span><br><span class="line">		&#125;      </span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第十章-多线程"><a href="#第十章-多线程" class="headerlink" title="第十章 多线程"></a>第十章 多线程</h2><p>1.线程可以理解成是在程序中独立运行的子任务。<br>2.线程的创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">	public class Text&#123;</span><br><span class="line">		public static void main(String args[])&#123;</span><br><span class="line">			DownloanA downloadA = new DownloanA();</span><br><span class="line">            Thread myThread =new Thread(downloadA);</span><br><span class="line">            myThread.start();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">	public class DownloanA implements Runnable&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run()&#123;</span><br><span class="line">            download();</span><br><span class="line">        &#125;</span><br><span class="line">        public void download()&#123;</span><br><span class="line">            System.out.println(&quot;进入mp3下载线程：&quot;+Thread.currentThread().getName());</span><br><span class="line">        &#125;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.多线程的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">//线程1</span><br><span class="line">public class MyThread /*implements Runnable*/ extends Thread&#123;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">			System.out.println(&quot;开启了多线程1&quot;);		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">//线程2</span><br><span class="line">public class MyThread1 /*implements Runnable*/extends Thread&#123;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">			System.out.println(&quot;开启了多线程2&quot;);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">//测试</span><br><span class="line">public class Test &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		/*MyThread myThread=new MyThread();</span><br><span class="line">		//myThread.run();</span><br><span class="line">		new Thread(myThread).start();</span><br><span class="line">		</span><br><span class="line">		MyThread1 myThread1=new MyThread1();</span><br><span class="line">		//myThread1.run();</span><br><span class="line">		new Thread(myThread1).start();*/</span><br><span class="line">		</span><br><span class="line">		/*MyThread myThread=new MyThread();</span><br><span class="line">		myThread.start();</span><br><span class="line">		MyThread1 myThread1=new MyThread1();</span><br><span class="line">		myThread1.start();*/</span><br><span class="line">		//System.out.println(&quot;main:&quot;+Thread.currentThread().getName());</span><br><span class="line">		Thread thread=new Thread(&quot;my线程&quot;)&#123;</span><br><span class="line">			@Override</span><br><span class="line">			public void run() &#123;</span><br><span class="line">				// TODO Auto-generated method stub</span><br><span class="line">				System.out.println(&quot;新线程：&quot;+Thread.currentThread().getName());</span><br><span class="line">			&#125;;</span><br><span class="line">		&#125;;</span><br><span class="line">		//thread.run();</span><br><span class="line">		thread.start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/10/Java面向对象知识点总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -209,8 +344,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
