@@ -152,6 +152,141 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/22/hexo搭建个人博客/">hexo搭建个人博客</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/22/hexo搭建个人博客/" class="archive-article-date">
+  	<time datetime="2019-10-22T02:55:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><h4 id="第一步：删除"><a href="#第一步：删除" class="headerlink" title="第一步：删除"></a>第一步：删除</h4><blockquote>
+<p>因为是重新创建，所以要把之前的blog目录删掉。</p>
+</blockquote>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/1.png" alt="img"></p>
+<h4 id="第二步：安装框架"><a href="#第二步：安装框架" class="headerlink" title="第二步：安装框架"></a>第二步：安装框架</h4><p>在<code>hexo</code>目录中打开<code>Git Bash</code></p>
+<p>输入代码：<code>npm install hexo-cli -g</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/2.png" alt="img"></p>
+<blockquote>
+<p>该过程根据电脑内存的不同可能会持续30s-60s，耐心等待</p>
+</blockquote>
+<h4 id="第三步：创建blog"><a href="#第三步：创建blog" class="headerlink" title="第三步：创建blog"></a>第三步：创建blog</h4><p>输入代码：<code>hexo init blog</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/3.png" alt="img"></p>
+<blockquote>
+<p>该过程也是会持续一段时间</p>
+</blockquote>
+<h4 id="第四步：切换目录"><a href="#第四步：切换目录" class="headerlink" title="第四步：切换目录"></a>第四步：切换目录</h4><p>输入代码：<code>cd blog</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/4.png" alt="img"></p>
+<p><em>查看是否切换</em></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/5.png" alt="img"></p>
+<h4 id="第五步：安装组件"><a href="#第五步：安装组件" class="headerlink" title="第五步：安装组件"></a>第五步：安装组件</h4><p>输入代码：<code>npm install</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/6.png" alt="img"></p>
+<h4 id="第六步：生成静态页面"><a href="#第六步：生成静态页面" class="headerlink" title="第六步：生成静态页面"></a>第六步：生成静态页面</h4><p>输入代码：<code>hexo g</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/7.png" alt="img"></p>
+<h4 id="第七步：启动本地服务器"><a href="#第七步：启动本地服务器" class="headerlink" title="第七步：启动本地服务器"></a>第七步：启动本地服务器</h4><p>输入代码：<code>hexo s</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/8.png" alt="img"></p>
+<p>然后在浏览器输入网址：<code>localhost:4000</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/9.png" alt="img"></p>
+<p>这只是本地博客，下面配置远端博客</p>
+<p>在命令界面按<code>Ctrl</code>+<code>C</code>结束本地服务器</p>
+<h4 id="第八步：布置deployer目录"><a href="#第八步：布置deployer目录" class="headerlink" title="第八步：布置deployer目录"></a>第八步：布置deployer目录</h4><p>输入代码：<code>npm install --save hexo-deployer-git</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/10.png" alt="img"></p>
+<blockquote>
+<p>该过程需要一段时间的加载，耐心等待！</p>
+</blockquote>
+<h4 id="第九步：修改-config-yml文件"><a href="#第九步：修改-config-yml文件" class="headerlink" title="第九步：修改_config.yml文件"></a>第九步：修改_config.yml文件</h4><p>打开<code>hexo</code>根目录下的<code>_config.yml</code>文件，修改其<code>deploy</code>标签的内容(应该在最下面)</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/11.png" alt="img"></p>
+<p><strong>repo后面的Frightings修改成你们自己的名字！冒号后面跟个空格！</strong></p>
+<p>修改后输入代码：<code>hexo clean</code>清理缓存，</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/12.png" alt="img"></p>
+<p>然后输入代码：<code>hexo g</code>重新布置静态页面。</p>
+<h4 id="第十步：布置远端博客"><a href="#第十步：布置远端博客" class="headerlink" title="第十步：布置远端博客"></a>第十步：布置远端博客</h4><p>输入代码：<code>hexo d</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/13.png" alt="img"></p>
+<p>然后他会让你告诉他，你是谁~（Please tell me who you are）</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/14.png" alt="img"></p>
+<p>接着咱们就告诉他，咱是谁~</p>
+<p>输入代码：<code>git config --global user.email &quot;youremail@qq.com&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/15.png" alt="img"></p>
+<p><strong>注意！ 这边<a href="mailto:youremail@qq.com" target="_blank" rel="noopener">youremail@qq.com</a>不是让你照搬抄上！是让你写上你自己的邮箱！</strong></p>
+<p>接着输入代码：<code>git config --global user.name &quot;yourname&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/16.png" alt="img"></p>
+<p><strong>同样，这边yourname不是让你照搬抄上！是让你写上你自己的用户名。</strong></p>
+<p>然后依次输入代码:<code>hexo clean</code>清理下缓存，</p>
+<p><code>hexo g</code>生成静态页面，<code>hexo d</code>布置远端。</p>
+<h4 id="第十一步：查看效果"><a href="#第十一步：查看效果" class="headerlink" title="第十一步：查看效果"></a>第十一步：查看效果</h4><p>然后在网站中输入你的博客地址<code>yourname.github.io</code>就会出现你的博客。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/17.png" alt="img"></p>
+<h4 id="第十二步：写博客"><a href="#第十二步：写博客" class="headerlink" title="第十二步：写博客"></a>第十二步：写博客</h4><p>输入代码：<code>hexo new &quot;我的第一篇博客&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/18.png" alt="img"></p>
+<p>这上面写出了你的博客路径，找到他进行编辑。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/19.png" alt="img"></p>
+<p>打开后：</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/20.png" alt="img"></p>
+<p>上面有个<code>tags</code>标签,目前没什么用，先<strong>删除</strong>，要不然可能会编译错误。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/21.png" alt="img"></p>
+<p>编辑完之后：</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/22.png" alt="img"></p>
+<h4 id="第十三步：查看效果"><a href="#第十三步：查看效果" class="headerlink" title="第十三步：查看效果"></a>第十三步：查看效果</h4><p>十二步完成后，依次输入代码：<code>hexo clean</code>清理缓存，</p>
+<p>输入代码：<code>hexo g</code>生成静态页面，</p>
+<p>可以发现里面的<code>INFO</code>项中加载了自己写的博客。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/23.png" alt="img"></p>
+<p>输入代码：<code>hexo d</code> 缓存到GitHub。</p>
+<p>然后再刷新一下自己的博客地址，可以发现自己写的博客已经显示了。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/24.png" alt="img"></p>
+<p><strong>如果需要继续添加文章，也是相同的步骤和代码。</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/22/hexo搭建个人博客/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-MYSQL知识点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
