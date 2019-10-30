@@ -1,212 +1,890 @@
-﻿<!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="Michael">
+
+
     
-    <title>小磊磊</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    
-      <link rel="icon" href="/favicon.png">
     
 
-    <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="wecome">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="wecome">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wecome">
 
-  </head>
-
-  <body>
-</body></html>
-<header>
-	<a id="logo" href="/" title="小磊磊">
-	<img src="/favicon.png" alt="小磊磊"></a>
-	
-	
-		<!--搜索栏-->
-		<i class="js-toggle-search iconfont icon-search"></i>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
-	<div class="search-form__inner">
-		<div>
-			<i class="iconfont icon-search"></i>
-			<input class="text-input" placeholder="Enter Key..." type="search">
-		</div>
-	</div>
-</form>
-	
+    <link rel="alternate" href="/atom.xml" title="wecome" type="application/atom+xml">
 
-	
-		<!--侧边导航栏-->
-		<a id="nav-toggle" href="#"><span></span></a>
 
-<nav>
-	<div class="menu-top-container">
-		<ul id="menu-top" class="menu">
-			
-				
-				<li class="current-menu-item">
-					<a href="http://weibo.com/" target="_blank">Weibo</a>
-				</li>
-			
-		</ul>
-	</div>
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>wecome</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Michael</a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>Menu</li>
+                        <li>Tags</li>
+                        
+                        <li>Friends</li>
+                        
+                        
+                        <li>About Me</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Michael</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Michael</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-	
-
-</header>
-<div class="m-header ">
-	<section id="hero1" class="hero">
-		<div class="inner">
-		</div>
-	</section>
-	
-		<figure class="top-image" data-enable=true></figure>
-	
-</div>
-
-<!--文章列表-->
-<div class="wrapper">
+      <div class="body-wrap">
   
-    <ul class="posts-list mb+ js-posts">
-      
-                <!--<div class="type">
-          <div class="mask">
-            <i class="iconfont"></i>
-          </div>
-          </div>-->
-        <li class="post">
-          
-            <i class="post-status iconfont icon-icon"></i>  
-          
-          <h2 class="no-background"  >
-            <span><a href="/2019/10/23/我的博客/">我的博客</a></span>
-            <time class="post-time" datetime="2019-10-23T03:14:03.000Z" itemprop="datePublished">2019-10-23</time>
-          </h2>
-        </li>
-      
-                <!--<div class="type">
-          <div class="mask">
-            <i class="iconfont"></i>
-          </div>
-          </div>-->
-        <li class="post">
-          
-          <h2 class="no-background"  >
-            <span><a href="/2019/10/22/hexo搭建个人博客/">hexo搭建个人博客</a></span>
-            <time class="post-time" datetime="2019-10-22T02:55:21.000Z" itemprop="datePublished">2019-10-22</time>
-          </h2>
-        </li>
-      
-                <!--<div class="type">
-          <div class="mask">
-            <i class="iconfont"></i>
-          </div>
-          </div>-->
-        <li class="post">
-          
-          <h2 class="no-background"  >
-            <span><a href="/2019/10/21/MYSQL知识点/">MYSQL知识点</a></span>
-            <time class="post-time" datetime="2019-10-20T16:00:00.000Z" itemprop="datePublished">2019-10-21</time>
-          </h2>
-        </li>
-      
-                <!--<div class="type">
-          <div class="mask">
-            <i class="iconfont"></i>
-          </div>
-          </div>-->
-        <li class="post">
-          
-          <h2 class="no-background"  >
-            <span><a href="/2019/10/12/JAVA面向对象知识点汇总/">JAVA面向对象知识点汇总</a></span>
-            <time class="post-time" datetime="2019-10-12T06:12:23.000Z" itemprop="datePublished">2019-10-12</time>
-          </h2>
-        </li>
-      
-    </ul>
+    <article id="post-hexo搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/10/22/hexo搭建个人博客/" class="article-date">
+      <time datetime="2019-10-22T02:55:21.000Z" itemprop="datePublished">2019-10-22</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
     
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/22/hexo搭建个人博客/">hexo搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><h4 id="第一步：删除"><a href="#第一步：删除" class="headerlink" title="第一步：删除"></a>第一步：删除</h4><blockquote>
+<p>因为是重新创建，所以要把之前的blog目录删掉。</p>
+</blockquote>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/1.png" alt="img"></p>
+<h4 id="第二步：安装框架"><a href="#第二步：安装框架" class="headerlink" title="第二步：安装框架"></a>第二步：安装框架</h4><p>在<code>hexo</code>目录中打开<code>Git Bash</code></p>
+<p>输入代码：<code>npm install hexo-cli -g</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/2.png" alt="img"></p>
+<blockquote>
+<p>该过程根据电脑内存的不同可能会持续30s-60s，耐心等待</p>
+</blockquote>
+<h4 id="第三步：创建blog"><a href="#第三步：创建blog" class="headerlink" title="第三步：创建blog"></a>第三步：创建blog</h4><p>输入代码：<code>hexo init blog</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/3.png" alt="img"></p>
+<blockquote>
+<p>该过程也是会持续一段时间</p>
+</blockquote>
+<h4 id="第四步：切换目录"><a href="#第四步：切换目录" class="headerlink" title="第四步：切换目录"></a>第四步：切换目录</h4><p>输入代码：<code>cd blog</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/4.png" alt="img"></p>
+<p><em>查看是否切换</em></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/5.png" alt="img"></p>
+<h4 id="第五步：安装组件"><a href="#第五步：安装组件" class="headerlink" title="第五步：安装组件"></a>第五步：安装组件</h4><p>输入代码：<code>npm install</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/6.png" alt="img"></p>
+<h4 id="第六步：生成静态页面"><a href="#第六步：生成静态页面" class="headerlink" title="第六步：生成静态页面"></a>第六步：生成静态页面</h4><p>输入代码：<code>hexo g</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/7.png" alt="img"></p>
+<h4 id="第七步：启动本地服务器"><a href="#第七步：启动本地服务器" class="headerlink" title="第七步：启动本地服务器"></a>第七步：启动本地服务器</h4><p>输入代码：<code>hexo s</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/8.png" alt="img"></p>
+<p>然后在浏览器输入网址：<code>localhost:4000</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/9.png" alt="img"></p>
+<p>这只是本地博客，下面配置远端博客</p>
+<p>在命令界面按<code>Ctrl</code>+<code>C</code>结束本地服务器</p>
+<h4 id="第八步：布置deployer目录"><a href="#第八步：布置deployer目录" class="headerlink" title="第八步：布置deployer目录"></a>第八步：布置deployer目录</h4><p>输入代码：<code>npm install --save hexo-deployer-git</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/10.png" alt="img"></p>
+<blockquote>
+<p>该过程需要一段时间的加载，耐心等待！</p>
+</blockquote>
+<h4 id="第九步：修改-config-yml文件"><a href="#第九步：修改-config-yml文件" class="headerlink" title="第九步：修改_config.yml文件"></a>第九步：修改_config.yml文件</h4><p>打开<code>hexo</code>根目录下的<code>_config.yml</code>文件，修改其<code>deploy</code>标签的内容(应该在最下面)</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/11.png" alt="img"></p>
+<p><strong>repo后面的Frightings修改成你们自己的名字！冒号后面跟个空格！</strong></p>
+<p>修改后输入代码：<code>hexo clean</code>清理缓存，</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/12.png" alt="img"></p>
+<p>然后输入代码：<code>hexo g</code>重新布置静态页面。</p>
+<h4 id="第十步：布置远端博客"><a href="#第十步：布置远端博客" class="headerlink" title="第十步：布置远端博客"></a>第十步：布置远端博客</h4><p>输入代码：<code>hexo d</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/13.png" alt="img"></p>
+<p>然后他会让你告诉他，你是谁~（Please tell me who you are）</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/14.png" alt="img"></p>
+<p>接着咱们就告诉他，咱是谁~</p>
+<p>输入代码：<code>git config --global user.email &quot;youremail@qq.com&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/15.png" alt="img"></p>
+<p><strong>注意！ 这边<a href="mailto:youremail@qq.com" target="_blank" rel="noopener">youremail@qq.com</a>不是让你照搬抄上！是让你写上你自己的邮箱！</strong></p>
+<p>接着输入代码：<code>git config --global user.name &quot;yourname&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/16.png" alt="img"></p>
+<p><strong>同样，这边yourname不是让你照搬抄上！是让你写上你自己的用户名。</strong></p>
+<p>然后依次输入代码:<code>hexo clean</code>清理下缓存，</p>
+<p><code>hexo g</code>生成静态页面，<code>hexo d</code>布置远端。</p>
+<h4 id="第十一步：查看效果"><a href="#第十一步：查看效果" class="headerlink" title="第十一步：查看效果"></a>第十一步：查看效果</h4><p>然后在网站中输入你的博客地址<code>yourname.github.io</code>就会出现你的博客。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/17.png" alt="img"></p>
+<h4 id="第十二步：写博客"><a href="#第十二步：写博客" class="headerlink" title="第十二步：写博客"></a>第十二步：写博客</h4><p>输入代码：<code>hexo new &quot;我的第一篇博客&quot;</code></p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/18.png" alt="img"></p>
+<p>这上面写出了你的博客路径，找到他进行编辑。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/19.png" alt="img"></p>
+<p>打开后：</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/20.png" alt="img"></p>
+<p>上面有个<code>tags</code>标签,目前没什么用，先<strong>删除</strong>，要不然可能会编译错误。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/21.png" alt="img"></p>
+<p>编辑完之后：</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/22.png" alt="img"></p>
+<h4 id="第十三步：查看效果"><a href="#第十三步：查看效果" class="headerlink" title="第十三步：查看效果"></a>第十三步：查看效果</h4><p>十二步完成后，依次输入代码：<code>hexo clean</code>清理缓存，</p>
+<p>输入代码：<code>hexo g</code>生成静态页面，</p>
+<p>可以发现里面的<code>INFO</code>项中加载了自己写的博客。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/23.png" alt="img"></p>
+<p>输入代码：<code>hexo d</code> 缓存到GitHub。</p>
+<p>然后再刷新一下自己的博客地址，可以发现自己写的博客已经显示了。</p>
+<p><img src="https://czongz.github.io/2019/10/10/hexo-da-jian-ge-ren-bo-ke/24.png" alt="img"></p>
+<p><strong>如果需要继续添加文章，也是相同的步骤和代码。</strong></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
 
   
+    <article id="post-MYSQL知识点" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/10/21/MYSQL知识点/" class="article-date">
+      <time datetime="2019-10-20T16:00:00.000Z" itemprop="datePublished">2019-10-21</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/21/MYSQL知识点/">MYSQL知识点</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Mysql数据库知识点"><a href="#Mysql数据库知识点" class="headerlink" title="Mysql数据库知识点"></a>Mysql数据库知识点</h1><h2 id="1-管理数据库语句："><a href="#1-管理数据库语句：" class="headerlink" title="1.管理数据库语句："></a>1.管理数据库语句：</h2><p><strong>使用数据库：</strong></p>
+<p>use 数据库名;</p>
+<p><strong>添加数据库：</strong></p>
+<p>create database 数据库名;</p>
+<p><strong>修改数据库：</strong></p>
+<p>alter database 数据库名;</p>
+<p><strong>删除数据库：</strong></p>
+<p>drop database 数据库名;</p>
+<p><strong>查看所有数据库：</strong></p>
+<p>show databases;</p>
+<h2 id="2-管理表语句："><a href="#2-管理表语句：" class="headerlink" title="2.管理表语句："></a><strong>2.管理表语句：</strong></h2><p><strong>添加数据表：</strong></p>
+<p>create table 表名(</p>
+<p>　　列名 数据类型 数据约束,</p>
+<p>　　列名 数据类型 数据约束</p>
+<p>);</p>
+<p>create table student(</p>
+<p>　　name varchar(20) not null,</p>
+<p>　　age int(4)</p>
+<p>)</p>
+<p><strong>修改数据表：</strong></p>
+<p>alter table 表名;</p>
+<p>1)在表中增加新字段</p>
+<p>alter table student add colunm name varchar(20);</p>
+<p>2)删除表中的字段</p>
+<p>alter table student drop name;</p>
+<p>3)修改表中字段的类型</p>
+<p>alter table student modify name varchar(10);</p>
+<p><strong>删除数据表：</strong></p>
+<p>drop table 表名;</p>
+<p>drop table student;</p>
+<p><strong>查看所有表：</strong></p>
+<p>show tables;</p>
+<h2 id="3-管理数据语句："><a href="#3-管理数据语句：" class="headerlink" title="3.管理数据语句："></a>3.管理数据语句：</h2><p><strong>插入数据：</strong></p>
+<p>insert into 表名 (列1,列2…) values (值1,值2…);</p>
+<p>insert into student (name,age) values (‘张三’,20);</p>
+<p><strong>更新数据：</strong></p>
+<p>update 表名 set 列=修改值 where 条件;</p>
+<p>update student set name=’李四’ where name=’张三’;</p>
+<p><strong>删除数据：</strong></p>
+<p>delete from 表名 where 条件;</p>
+<p>delete from student where name=’李四’;</p>
+<p><strong>查询数据：</strong></p>
+<p>selete * from 表名 where 条件;</p>
+<p>selete * from student where name=’张三’;</p>
+<h2 id="4-各种查询语句："><a href="#4-各种查询语句：" class="headerlink" title="4.各种查询语句："></a><strong>4.各种查询语句：</strong></h2><p><strong>查询时指定别名：</strong></p>
+<p>1) selete id AS ‘编号’,name AS ‘姓名’ from student;</p>
+<p>2) selete id ‘编号’,name ‘姓名’ from student;(AS可以省略)</p>
+<p><strong>查询时合并列：</strong></p>
+<p>需求:查询每个学生的总分</p>
+<p>selete name AS ‘姓名’,(servlet+mysql) AS ‘总成绩’ from student;</p>
+<p>注意:合并列的字段必须是数值类型的字段</p>
+<p><strong>查询时去除重复(distinct)：</strong></p>
+<p>需求:查询有哪些地区的学生</p>
+<p>selete DISTINCT address from student;</p>
+<p>另一种语法</p>
+<p>selete DISTINCT(address) from student;</p>
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a><strong>条件查询</strong></h3><p><strong>逻辑条件: and  or</strong></p>
+<p>需求:查询学生的id为1，且姓名为张三的学生</p>
+<p>selete * from student where id=1 and name=’张三’;(交集)</p>
+<p>需求:查询学生的id为2，或姓名为张三的学生</p>
+<p>selete * from student where id=2 or name=’张三’;(并集)</p>
+<p><strong>比较条件: &gt;  &lt;  &gt;=  &lt;=  =  &lt;&gt;  (between and–在…之间 包前包后)</strong></p>
+<p>需求:查询servlet分数大于80分的学生</p>
+<p>selete * from student where servlet&gt;80;</p>
+<p>需求:查询mysql分数小于或等于85分的学生</p>
+<p>selete * from student where mysql&lt;=85;</p>
+<p>需求:查询servlet分数大于或等于80分，且小于或等于85分的学生</p>
+<p>selete * from student where servlet&gt;=80 AND servlet&lt;=85;</p>
+<p>代替上面语句的语法</p>
+<p>selete * from student where servlet BETWEEN 80 AND 85;</p>
+<p>需求:查询年龄不等于30的学生</p>
+<p>selete * from student where age&lt;&gt;30;</p>
+<p><strong>判空条件: is null,  is not null,  =**</strong>’’<strong><strong>,  &lt;&gt;</strong></strong>’’**</p>
+<p>Null:表示没有数据</p>
+<p>空字符:表示有数据</p>
+<p>需求:查询没有性别数据的学生(数据‘男’或‘女’)</p>
+<p>selete* from student where gender IS NULL OR gender=’’;</p>
+<p>需求:查询有性别数据的学生</p>
+<p>selete * from student where gender IS NOT NULL AND gender&lt;&gt;’’;</p>
+<p><strong>模糊条件: like</strong></p>
+<p>模糊替代符号:</p>
+<p>%:替代任意个字符</p>
+<p>_:替代一个字符</p>
+<p>需求:查询姓“李”的学生</p>
+<p>SELECT * FROM student WHERE NAME LIKE ‘李%’;</p>
+<p>需求:查询姓名中包含‘四’字的学生</p>
+<p>SELECT * FROM student WHERE NAME LIKE ‘%四%’;</p>
+<p>需求:查询姓‘李’，全名只有两个字的学生</p>
+<p>SELECT * FROM student WHERE NAME LIKE ‘李_’;</p>
+<p><strong>聚合函数查询(用于统计结果)</strong></p>
+<p>Max()取最大值  min()取最小值  avg()取平均值  count()统计标的记录数量 sum()求和</p>
+<p>需求:查询servlet的最高分</p>
+<p>SELECT MAX(servlet) FROM student;</p>
+<p>需求:查询mysql的最低分</p>
+<p>SELECT MIN(mysql) FROM student;</p>
+<p>需求:查询servlet的平均分</p>
+<p>SELECT AVG(servlet) FROM student;</p>
+<p>需求:查询当前有几个学生</p>
+<p>SELECT COUNT(*) FROM student;</p>
+<p>需求:查询servlet成绩的总和</p>
+<p>SELETE SUM(servlet) from student;</p>
+<p><strong>分页查询(limit)</strong></p>
+<p>Limit起始行数，查询的行数</p>
+<p>起始行数从0开始</p>
+<p>需求:查询第1,2条数据</p>
+<p>SELECT * FROM student LIMIT 0,2;</p>
+<p>分页查询需知道:当前页码，每页显示条数</p>
+<p>结论分页查询当前页数据:select * from student limit (当前页码-1)*每页显示条数，每页显示条数;</p>
+<p>需求:学生共20条数据，每页显示5条，共4页</p>
+<p>查询第3页(第11到15条)的学生数据:select * from student limit 10,5;</p>
+<p><strong>查询后排序(order by)</strong></p>
+<p>DESC:降序。数值从大到小，字母z-a</p>
+<p>ASC:升序。数值从小到大，字母a-z</p>
+<p>默认情况下，按照插入的顺序排序</p>
+<p>需求:按照id的升序排序</p>
+<p>select * from student order by id asc;</p>
+<p>需求:按照servlet成绩降序排序</p>
+<p>select * from student order by servlet desc;</p>
+<p>多个排序条件的情况:先按照前面的条件排序，当出现重复记录，再按照后面的条件排序</p>
+<p>需求:按照age升序，再按照servlet成绩升序排序</p>
+<p>select * from student order by age asc,servlet asc;</p>
+<p><strong>分组查询(group by)</strong></p>
+<p>需求:查询每个地区有多少人</p>
+<p>SELECT address,COUNT(*) FROM student GROUP BY address;</p>
+<p>需求:统计男女的人数</p>
+<p>注意:where条件必须放在group by 分组之前</p>
+<p>SELECT gender,COUNT(*) FROM student WHERE gender IS NOT NULL AND gender&lt;&gt;’’ GROUP BY gender;</p>
+<p><strong>分组后筛选(having)</strong></p>
+<p>需求:查询哪些地区的人数是大于2个的地区</p>
+<p>查询哪些地区多少人 2)筛选人数大于2的地区</p>
+<p>注意:having使用在group by分组之后，对分组后的条件进行筛选</p>
+<p>SELECT address,COUNT(<em>) FROM student GROUP BY address HAVING COUNT(</em>)&gt;2;</p>
+<h2 id="5-数据约束（给表添加数据约束，从而约束用户操作表数据的行为）"><a href="#5-数据约束（给表添加数据约束，从而约束用户操作表数据的行为）" class="headerlink" title="5.数据约束（给表添加数据约束，从而约束用户操作表数据的行为）"></a>5.数据约束（给表添加数据约束，从而约束用户操作表数据的行为）</h2><p><strong>1）默认值约束(default)</strong></p>
+<p>create table test(</p>
+<p>　　name varchar(20),</p>
+<p>　　gender varchar(20) default ‘男’</p>
+<p>)</p>
+<p>需求:当不插入gender的时候，分配一个‘男’的默认值</p>
+<p>注意:1)当没有插入gender字段的时候，分配一个默认值</p>
+<p><strong>2）非空约束（not null）</strong></p>
+<p>create table test(</p>
+<p>　　name varchar(20) not null,</p>
+<p>　　gender varchar(20)</p>
+<p>)</p>
+<p>需求；name字段一定要有值(不能不插入数据，不能是null)，这是给name添加非空约束</p>
+<p>1)非空约束，不能不插入值</p>
+<p>Insert into test(gender) values(‘男’);</p>
+<p>2)非空约束，不能插入null</p>
+<p>Insert into test(name,gender) values(null,’男’);</p>
+<p><strong>3)唯一约束(unique)</strong></p>
+<p>create table test(</p>
+<p>　　Id int unique,</p>
+<p>　　name varchar(20)</p>
+<p>)</p>
+<p>需求:id的值不能出现重复。这时就要给id添加一个唯一约束</p>
+<p>1)不能插入重复的值</p>
+<p>2)唯一约束，可以插入多个null。所以唯一约束不能约束null</p>
+<p>Insert into test(id,name) values(1,’张三’);</p>
+<p><strong>4)主键约束(primary key)(唯一+非空)</strong></p>
+<p>注意；</p>
+<p>1)通常情况下，我们会给每张表都设置一个主键字段，用来标记记录的唯一性</p>
+<p>2)但是不建议把业务含义字段作为主键，因为随着业务的变化，业务字段可能出现重复</p>
+<p>3)建议给每张表都独立添加一个叫id的字段，把这个id字段设置成主键，用来作为记录的唯一性</p>
+<p>create table test(</p>
+<p>　　Id int primary key,</p>
+<p>　　name varchar(20)</p>
+<p>)</p>
+<p>1)唯一性</p>
+<p>2)非空性</p>
+<p><strong>5)自增长约束(auto_increment)</strong></p>
+<p>create table test(</p>
+<p>　　Id int primary key auto_increment,</p>
+<p>　　name varchar(20)</p>
+<p>)</p>
+<p>自增长约束:初始值为0，每次递增1</p>
+<p>使用truncate table 删除数据的时候，可以把自增长的初始值置为0</p>
+<p><strong>6)外键约束</strong></p>
+<p>员工表(副表:被别的表约束的表，外键设置在副表)</p>
+<p>Create table employee(</p>
+<p>　　Id int primary key auto_increment,</p>
+<p>　　name varchar(20),</p>
+<p>　　deptId int,</p>
+<p>　　添加外键约束(foreign key)</p>
+<p>　　Constraint employee_dept_fk foreign key(deptId) references dept(id)</p>
+<p>​     　　　　　　 外键名                外键字段        </p>
+<p>)</p>
+<p>部门表(主表:约束别人的表)</p>
+<p>Create table dept(</p>
+<p>　　Id int primary key auto_increment,</p>
+<p>　　Name varchar(20)</p>
+<p>)</p>
+<p><strong>外键约束在什么情况下会起作用？</strong></p>
+<p>插入数据:当往副表插入了主表中不存在的数据时，外键起作用</p>
+<p>修改数据:当往副表中修改主表中不存在的数据时，外键起作用</p>
+<p>删除数据:副表中有关联主表数据的情况下，当删除主表数据时，外键起作用</p>
+<p><strong>当有了外键之后，应该如何管理数据呢？</strong></p>
+<p>插入数据:先插入主表的数据，再插入副表数据</p>
+<p>修改数据:先修改主表数据，再修改副表数据</p>
+<p>删除数据:先删除副表数据，再删除主表数据</p>
+<h2 id="6-数据库设计的三大范式"><a href="#6-数据库设计的三大范式" class="headerlink" title="6.数据库设计的三大范式"></a><strong>6.数据库设计的三大范式</strong></h2><p><strong>第一范式；要求表的每个字段必须独立的不可分割的单元</strong></p>
+<p>学生表: student name —违反第一范式</p>
+<p>​        张三|狗娃</p>
+<p>   王涵|张小涵</p>
+<p>查询:现用名中包含‘张’的学生</p>
+<p>Select * from student where name like ‘%张%’;</p>
+<p>学生表: student name old_name —符合第一范式</p>
+<p>​          张三  狗娃</p>
+<p>​    王涵       张小涵</p>
+<p><strong>第二范式:在第一范式的基础上，要求表的除主键以外的字段都和主键有依赖关系</strong></p>
+<p>一张表只表达一个意思</p>
+<p>员工表:employee</p>
+<p>员工编号  员工姓名  部门名称   订单名称  —违反第二范式</p>
+<p>员工表:employee</p>
+<p>员工编号  员工姓名  部门名称   —符合第二范式</p>
+<p>​      订单表:</p>
+<p>​      订单编号 订单名称</p>
+<p><strong>第三范式:在第二范式的基础上，要求表的除主键以外的字段都只能和主键有直接决定的依赖关系</strong></p>
+<p>员工表:employee</p>
+<p>员工编号  员工姓名  部门编号 部门名称 —违反第三范式(出现数据冗余)</p>
+<p>​        1     张三    1     软件开发部</p>
+<p>​        2     李四    1     软件开发部</p>
+<p>员工表:employee</p>
+<p>员工编号  员工姓名  部门编号  —符合第三范式</p>
+<p> 1     张三    1</p>
+<p> 2     李四    1</p>
+<p>部门表:dept</p>
+<p>部门编号  部门名称</p>
+<p>1      软件开发部</p>
+<h2 id="7-多表查询"><a href="#7-多表查询" class="headerlink" title="7.多表查询"></a><strong>7.多表查询</strong></h2><p><strong>1.交叉连接查询(笛卡尔乘积:4*3=12，产生笛卡尔积的原因是没有足够的连接条件)(一般不用)</strong></p>
+<p>需求:查询员工及其部门名称</p>
+<p>SELECT employee.name,dept.name</p>
+<p>FROM employee,dept;</p>
+<p><strong>2.内连接查询(使用最多)</strong></p>
+<p>多表查询的步骤:1)确定查询哪些表</p>
+<p>​        2)确定查询哪些字段</p>
+<p>​        3)确定连接条件(规则:条件=表数量-1)</p>
+<p>SELECT employee.name,dept.name</p>
+<p>FROM employee,dept</p>
+<p>WHERE employee.deptId=dept.id;</p>
+<p>另一种语法</p>
+<p>SELECT e.name,d.name</p>
+<p>FROM employee e</p>
+<p>INNER JOIN dept d</p>
+<p>ON e.deptId=d.id;</p>
+<p><strong>3.左外连接查询(左表数据全部显示，如果右边不满足，则显示null)</strong></p>
+<p>需求:查询部门及其部门的员工</p>
+<p>SELECT d.name,e.name</p>
+<p>FROM dept d</p>
+<p>LEFT OUTER JOIN employee e</p>
+<p>ON d.id=e.deptId;</p>
+<p><strong>4.右外连接查询(右表数据全部显示，如果左边不满足，则显示null)</strong></p>
+<p>SELECT d.name,e.name</p>
+<p>FROM employee e</p>
+<p>RIGHT OUTER JOIN dept d</p>
+<p>ON e.deptId=d.id;</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-JAVA面向对象知识点汇总" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/10/12/JAVA面向对象知识点汇总/" class="article-date">
+      <time datetime="2019-10-12T06:12:23.000Z" itemprop="datePublished">2019-10-12</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/12/JAVA面向对象知识点汇总/">JAVA面向对象知识点汇总</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="第二章-类和对象的创建"><a href="#第二章-类和对象的创建" class="headerlink" title="第二章 类和对象的创建"></a>第二章 类和对象的创建</h1><p>1.面向对象的概念<br>面向对象的思想是把一个项目，一件事情分成更小的项目，或者说分成一个个更小的部分，<br>每一部分负责什么方面的功能，最后再由这些部分组合而成为一个整体。</p>
+<p>2.类的创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法：public class 类名&#123;&#125;	</span><br><span class="line">		File---&gt;new---&gt;class---&gt;类名</span><br></pre></td></tr></table></figure>
+
+<p>3.创建对象<br>类名 对象名 =new 类名()；<br>对象名.方法名()；对象名.属性<br>4.构造方法：方法名和类名相同，没有返回值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public class 类名&#123;	</span><br><span class="line">	public 类名（）&#123;&#125;//主要作用是初始化操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.构造方法的重载：在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public class 类名&#123;		</span><br><span class="line">	public 类名（）&#123;&#125;		</span><br><span class="line">	public 类名（String name，int age）&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>6.构造方法的执行：<br>new 类名（）；—&gt;执行构造方法<br>super（）；—&gt;执行了父类的构造方法<br>7.static静态修饰符<br>静态修饰符可以修饰属性，方法，代码块<br>类名.属性 类名.方法名<br>8.Java内存（栈和堆，static，方法区，gc（垃圾回收机制））</p>
+<h2 id="第三章-面向对象三大特征—封装"><a href="#第三章-面向对象三大特征—封装" class="headerlink" title="第三章 面向对象三大特征—封装"></a>第三章 面向对象三大特征—封装</h2><p>1.封装的概念<br>封装是指将对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息<br>而是通过该类所提供的方法来实现对内部信息的操作访问<br>2.封装的步骤<br>（1）把属性私有化（private）<br>（2）对这些属性设置get和set方法<br>（3）调用处理这些方法<br>3.封装的作用：避免一些用户不合理的操作<br>4.修饰符<br>（1）public—&gt;公共的：在一个项目中都可以访问，权限最高<br>（2）private—&gt;私有的：只能在本类中进行访问，权限最低<br>（3）protected—&gt;安全的，受保护的：同一个包中才能进行访问，继承中子类可以访问父类<br>（4）default—&gt;默认的：同一个包中能访问</p>
+<h2 id="第四章-面向对象的三大特征—继承"><a href="#第四章-面向对象的三大特征—继承" class="headerlink" title="第四章 面向对象的三大特征—继承"></a>第四章 面向对象的三大特征—继承</h2><p>1.继承的概念<br>子类继承父类的属性，方法。<br>2.继承的关键字：extends<br>3.继承的语法：<br>public class 类名 extends 父类{}<br>4.使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//父类</span><br><span class="line">public void shout()&#123;</span><br><span class="line">	system.out.println(&quot;动物发出叫声&quot;);</span><br><span class="line">&#125;</span><br><span class="line">//子类重写</span><br><span class="line">public viod shout()&#123;		</span><br><span class="line">	system.out.println(&quot;某一种动物发出叫声&quot;);</span><br><span class="line">&#125;</span><br><span class="line">//测试</span><br><span class="line">public static void main(String[]args)&#123;</span><br><span class="line">父类 引用变量名=new 父类();//创建父类的实例对象</span><br><span class="line">引用变量名.shout();//调用父类重写</span><br><span class="line">shout()方法</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.父类构造方法调用：super（）；<br>调用父类的构造方法必须在子类中调用<br>必须在子类构造方法的第一行<br>6.重写@Override<br>必须继承<br>方法名一致，参数个数，顺序，类型全部一致</p>
+<h2 id="第五章-面向对象（多态）"><a href="#第五章-面向对象（多态）" class="headerlink" title="第五章 面向对象（多态）"></a>第五章 面向对象（多态）</h2><p>1.多态的概念<br>指不同类的对象对同一消息做出响应<br>2.多态的必要条件<br>继承<br>重写<br>父类引用指向子类对象（向上转型）<br>3.多态的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Father&#123;</span><br><span class="line"> 			public void cooking()&#123;</span><br><span class="line"> 				System.out.println(&quot;米饭&quot;);</span><br><span class="line"> 			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line">  	public class Son extends Father&#123;</span><br><span class="line"> 			public void cooking()&#123;</span><br><span class="line"> 				System.out.println(&quot;熬粥&quot;);</span><br><span class="line"> 			&#125;</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		public class Test &#123;</span><br><span class="line">			public static void main(String[] args) &#123;</span><br><span class="line">				Father son=new Son();</span><br><span class="line">				son.cooking();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.向下转型<br>Son son=(Son)father;</p>
+<h2 id="第六章-抽象"><a href="#第六章-抽象" class="headerlink" title="第六章 抽象"></a>第六章 抽象</h2><p>1.抽象的概念<br>抽象就是用程序的逻辑方法和数据结构来模拟现实的世界<br>2.抽象的关键字<br>abstract<br>可以修饰类，可以修饰方法<br>3.抽象的用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//抽象类 		</span><br><span class="line">public abstract class 类名&#123; 		</span><br><span class="line">//抽象方法没有方法体 </span><br><span class="line">public abstract void 方法名();</span><br><span class="line">&#125;</span><br><span class="line">//当父类是抽象类的时候，子类必须重写父类里面的抽象方法</span><br></pre></td></tr></table></figure>
+
+<p>4.final修饰符：最终的<br>修饰变量，修饰方法，修饰类<br>1.当修饰变量时，变量转换成常量，常量的值不能改变<br>final int a=18;//a=18;不能改变,必须给一个初始值<br>2.当修饰方法时，该方法不能被重写<br>3.当修饰类时，该类不能被继承</p>
+<h2 id="第七章-接口"><a href="#第七章-接口" class="headerlink" title="第七章 接口"></a>第七章 接口</h2><p>1.接口的概念<br>接口是一套规范，满足这个规范的设备，就可以将他们组装到一起，也可以实现具体复杂事物但有规律的功能<br>2.接口的关键字<br>interface<br>3.接口的语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">实现接口的关键字  implements  </span><br><span class="line">public interface 接口名&#123;  </span><br><span class="line">//接口是纯抽象类  		</span><br><span class="line">//接口里面的方法都是抽象方法 </span><br><span class="line">void setData();  	</span><br><span class="line">&#125;  </span><br><span class="line">public class Play implements 接口名&#123; </span><br><span class="line">void setData()&#123;  	</span><br><span class="line">	&#125; </span><br><span class="line">&#125;  </span><br><span class="line">public class Test &#123;  </span><br><span class="line">public static void main(String[] args) &#123; </span><br><span class="line">Play play=new Play();  </span><br><span class="line">play.setData();  	</span><br><span class="line">	&#125;  	</span><br><span class="line">&#125;</span><br><span class="line">注意接口可以进行多继承</span><br><span class="line">    public interface 接口名 extends 接口名，接口名&#123;&#125;</span><br><span class="line">    一般用法</span><br><span class="line">    public class 类名 extends 父类 implements 接口，接口&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第八章-集合框架"><a href="#第八章-集合框架" class="headerlink" title="第八章 集合框架"></a>第八章 集合框架</h2><p>1.ArrayList<br>1.用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList list=new ArrayList();</span><br><span class="line">	list.add();//添加数据  	</span><br><span class="line">	list.get();//获取数据</span><br></pre></td></tr></table></figure>
+
+<p>2.Map<br>用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map map=new HasMap();</span><br><span class="line">	map.put(key,value);//key不能重复 </span><br><span class="line">	map.get(key);//获取key对象的value</span><br></pre></td></tr></table></figure>
+
+<p>3.泛型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list=new ArrayList&gt;&lt;String&gt;();</span><br><span class="line">	Map&lt;String,String&gt; map=new HasMap&lt;String,String&gt;(); 							ArrayList&lt;Map&lt;String,String&gt;&gt; list=new ArrayList&gt;&lt;Map&lt;String,String&gt;();</span><br></pre></td></tr></table></figure>
+
+<h2 id="第九章-高级功能-文件操作"><a href="#第九章-高级功能-文件操作" class="headerlink" title="第九章 高级功能-文件操作"></a>第九章 高级功能-文件操作</h2><p>1.文件概述<br>文件是有具体内容或用途的，而文件夹是用来放置这些文件的。文件在java中对应的类是File。File类是IO包中唯一代表磁盘文件本身的对象。通过File来创建，删除，重命名文件。<br>2.流<br>在Java中所读取到的信息，是通过一根管道，输送到数据文件中的。这跟管道中的信息，称之为“流”(Stream)。可以分为字节流和输出流。<br>3.使用FileWrite类写文件示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">	Writer fw=null;    </span><br><span class="line">	try &#123;           </span><br><span class="line">		fw=new FileWriter(&quot;d:/sample.txt&quot;);  </span><br><span class="line">		//写入信息          </span><br><span class="line">		fw.write(&quot;我热爱JAVA编程！&quot;);</span><br><span class="line">		fw.flush();//刷新缓冲区      </span><br><span class="line">	&#125; catch (IOException e) &#123;   </span><br><span class="line">		// TODO: handle exception </span><br><span class="line">		e.printStackTrace();   </span><br><span class="line">	&#125;if (fw!=null) &#123;  </span><br><span class="line">		try &#123;           </span><br><span class="line">			fw.close();     </span><br><span class="line">		&#125; catch (IOException e) &#123; </span><br><span class="line">		// TODO: handle exception   </span><br><span class="line">		e.printStackTrace();    </span><br><span class="line">		&#125;      </span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第十章-多线程"><a href="#第十章-多线程" class="headerlink" title="第十章 多线程"></a>第十章 多线程</h2><p>1.线程可以理解成是在程序中独立运行的子任务。<br>2.线程的创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">	public class Text&#123;</span><br><span class="line">		public static void main(String args[])&#123;</span><br><span class="line">			DownloanA downloadA = new DownloanA();</span><br><span class="line">            Thread myThread =new Thread(downloadA);</span><br><span class="line">            myThread.start();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">	public class DownloanA implements Runnable&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run()&#123;</span><br><span class="line">            download();</span><br><span class="line">        &#125;</span><br><span class="line">        public void download()&#123;</span><br><span class="line">            System.out.println(&quot;进入mp3下载线程：&quot;+Thread.currentThread().getName());</span><br><span class="line">        &#125;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.多线程的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">//线程1</span><br><span class="line">public class MyThread /*implements Runnable*/ extends Thread&#123;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">			System.out.println(&quot;开启了多线程1&quot;);		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">//线程2</span><br><span class="line">public class MyThread1 /*implements Runnable*/extends Thread&#123;</span><br><span class="line"></span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">			System.out.println(&quot;开启了多线程2&quot;);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">//测试</span><br><span class="line">public class Test &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		/*MyThread myThread=new MyThread();</span><br><span class="line">		//myThread.run();</span><br><span class="line">		new Thread(myThread).start();</span><br><span class="line">		</span><br><span class="line">		MyThread1 myThread1=new MyThread1();</span><br><span class="line">		//myThread1.run();</span><br><span class="line">		new Thread(myThread1).start();*/</span><br><span class="line">		</span><br><span class="line">		/*MyThread myThread=new MyThread();</span><br><span class="line">		myThread.start();</span><br><span class="line">		MyThread1 myThread1=new MyThread1();</span><br><span class="line">		myThread1.start();*/</span><br><span class="line">		//System.out.println(&quot;main:&quot;+Thread.currentThread().getName());</span><br><span class="line">		Thread thread=new Thread(&quot;my线程&quot;)&#123;</span><br><span class="line">			@Override</span><br><span class="line">			public void run() &#123;</span><br><span class="line">				// TODO Auto-generated method stub</span><br><span class="line">				System.out.println(&quot;新线程：&quot;+Thread.currentThread().getName());</span><br><span class="line">			&#125;;</span><br><span class="line">		&#125;;</span><br><span class="line">		//thread.run();</span><br><span class="line">		thread.start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
 </div>
-
-
-
-
-
-<div class="fat-footer">
-	<div class="wrapper">
-		<div class="layout layout--center">
-			<div class="layout__item palm-mb">
-				<div class="media">
-					<img class="headimg" src='https://imgchr.github.la/steve.jpeg' alt='琳琅天上'>
-					<div class="media__body">
-						<h4>justpsvm</h4>
-						<p class='site-description'>Stay Hungry,Stay Foolish.</p>
-					</div>
-				</div>
-				<div class="author-contact">
-					<ul>
-						
-							
-							<li>
-				        		<a href="http://weibo.com/" target="_blank">
-				        			
-				        				<i class="iconfont icon-weibo"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-							
-							<li>
-				        		<a href="https://github.com/" target="_blank">
-				        			
-				        				<i class="iconfont icon-github"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-							
-							<li>
-				        		<a href="https://www.zhihu.com/" target="_blank">
-				        			
-										<i class="iconfont icon-zhihu"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer class="footer" role="contentinfo">
-	<div class="wrapper wrapper--wide split split--responsive">
-		
-			<span>本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>
-		
-		<span>Theme by <a href="http://github.com/justpsvm">justpsvm</a>. Powered by <a href="http://hexo.io">Hexo</a></span>
-	</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 Michael
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
 </footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
-	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
-	<script src="/js/lib.js"></script>
-	<script src="/js/google-code-prettify/prettify.js"></script>
-	<script src="/js/module.js"></script>
-	<script src="/js/script.js"></script>
-	
-		<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-	<script type='text/javascript'>
-		//代码高亮
-		$(document).ready(function(){
-	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   			prettyPrint();
-		});
-	</script>
-	</body>
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
 </html>
