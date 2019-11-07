@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>jsp的request对象 | wecome</title>
+  <title>wecome</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,57 +173,45 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-10-30T10:46:12.000Z" itemprop="datePublished">
-          2019-10-30
+      <time datetime="2019-11-07T00:20:18.789Z" itemprop="datePublished">
+          2019-11-07
       </time>
     
 </span>
-                <h1>jsp的request对象</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="jsp的request对象主要方法"><a href="#jsp的request对象主要方法" class="headerlink" title="jsp的request对象主要方法"></a>jsp的request对象主要方法</h3><h6 id="request对象的方法非常多，只写其中常用的几种方法。"><a href="#request对象的方法非常多，只写其中常用的几种方法。" class="headerlink" title="request对象的方法非常多，只写其中常用的几种方法。"></a>request对象的方法非常多，只写其中常用的几种方法。</h6><ul>
-<li><p><strong>getAttribute(String name);</strong>这个方法可以取出<strong>name</strong>属性的值，<strong>name</strong>属性的值可以用<strong>setAttribute(String name,Object o);</strong>方法赋值，如果没有对其赋值，则默认<strong>name</strong>为<strong>null</strong>;    </p>
-</li>
-<li><p><strong>getContexntPath();</strong>这个方法可以获取服务器上下文的路径；</p>
-</li>
-<li><p><strong>getCookies();</strong>这个方法可以获取客户端的Cookies（一个保存在客户机中的简单的文本文件）；</p>
-</li>
-<li><p><strong>getHeader(String name)</strong>这个方法可以获取指定名称的HTTP报头的属性值；</p>
-</li>
-<li><p><strong>getParameter(String name)</strong>这个方法可以获取客户端提交到服务器的参数；</p>
-</li>
-<li><p><strong>getServerName()</strong>这个方法可以获得服务器的名称</p>
-</li>
-<li><p><strong>getServerPort()</strong>这个方法可以获得服务器的访问端口</p>
-</li>
-<li><p><strong>setAttribute(String name,Object o);</strong>对name属性赋值</p>
-</li>
-<li><p><strong>removeAttribute(String name)</strong>这个方法移除指定名称的属性</p>
-</li>
-<li><p><strong>getRemoteAddr()</strong>这个方法返回客户端的IP地址</p>
-<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2></li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br><span class="line">    pageEncoding=<span class="string">"gb2312"</span>%&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">&lt;title&gt;request实例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">	request.setAttribute(<span class="string">"attr"</span>, <span class="string">"hello!"</span>);</span><br><span class="line">	out.print(<span class="string">"attr的值"</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"上下文路径"</span>+request.getContextPath()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Cookies:"</span>+request.getCookies()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Host:"</span>+request.getHeader(<span class="string">"Host"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器名称："</span>+request.getServerName()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器端口："</span>+request.getServerPort()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"客户端的IP地址："</span>+request.getRemoteAddr()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	request.removeAttribute(<span class="string">"attr"</span>);</span><br><span class="line">	out.print(<span class="string">"属性移除后的attr的值："</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><img src="http://a1.qpic.cn/psb?/V13S9xI31Px2LW/p5RYDG8GnkBkSSMOzIUH7uJq0KspJo3TBS*Hf.Iwp9M!/c/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=nwEkAZ8BJAEDGTw!&tl=1&vuin=1458566939&tm=1571918400&sce=60-2-2&rf=0-0" style="zoom:150%;">
-
-<ul>
-<li>补充一个<strong>request.setCharacterEncoding(“utf-8”);</strong>用来改变传递参数的编码</li>
-</ul>
+      		<h1 id="jsp中post和get的区别及使用"><a href="#jsp中post和get的区别及使用" class="headerlink" title="jsp中post和get的区别及使用"></a>jsp中post和get的区别及使用</h1><p><strong>1：请求数据的大小不同。</strong></p>
+<p>因为get请求的数据是要追加到URL中，而URL的数据量一般不能超过2K，所以用get请求的方法对数据的大小有限制。而post请求方法是把数据放在消息体中，所以理论上对数据量没有限制。（但是实际操作中也不能能太大）</p>
+<p><strong>2：安全性不一样</strong></p>
+<p>因为get请求的数据是追加在URL中，外部用户能很方便的看到，从这个角度上来讲不安全。而post方法因为是讲请求放在消息体中，不会直接在URL中显示所以从这个角度来说数据会比较安全。</p>
+<p><strong>3：书签建立</strong></p>
+<p>get请求可以建立书签；post请求则不能。例如：假设你有一个页面允许用户指定搜索规则。用户可能一个星期之后才回来，想要得到原来的数据，但此时服务器上已经有新的数据了。</p>
+<p><strong>4：方法的使用</strong></p>
+<p>get用于得到某些东西，只是简单的获取，不会对服务器做任何的改变。post则用户发送数据来进行处理，可以修改服务器上的数据。</p>
+<p><strong>5：请求是否幂等</strong></p>
+<p>get请求是幂等的，它只是要得到一些东西，不会修改服务器上的内容。它能执行多次，而且不会产生任何不好的副作用。而post不是幂等的，post体中的提交的数据可能用于不可逆转的事务。所以从这个角度上来看的话要慎重使用doPost()功能。</p>
+<p>若表单中未指出method=“POST”，就会默认为HTTPGET请求。即缺省状态是调用get请求。</p>
+<p> 在学习JavaWeb最初的开始阶段，大家都会遇到HttpServlet中的doGet和doPost方法。</p>
+<p>（1）doGet方法：主要是处理Http中的Get请求<br>（2）doPost方法：主要是处理Http中的Post请求</p>
+<p><strong>那么Get请求和Post请求到底有什么样的区别</strong></p>
+<p>（1）get只有一个流，参数附加在url后，大小个数有严格限制且只能是字符串<br>例如，<a href="http://localhost:8888/javaweb/getServlet?name=123" target="_blank" rel="noopener">http://localhost:8888/javaweb/getServlet?name=123</a><br>（2）post的参数是通过另外的流传递的，不通过url，所以可以很大，也可以传递二进制数据，如文件的上传。</p>
+<p><strong>什么时候使用doGet和doPost方法 ：</strong></p>
+<p>1.通过表单提交到的servlet,看form的method是get还是post<br>2.通过链接&lt;a href…&gt;访问的servlet,doGet<br>3.直接在ie地址栏中键入的servlet地址,doGet</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/10/31/新手玩云服务器/" style="float: left;">
-        ← 新手玩云服务器
+    <a class="pull-left" href="/2019/11/07/Request和Response的区别/" style="float: left;">
+        ← 
     </a>
     
     
-    <a class="pull-right" href="/2019/10/30/Ajax简述/">
-        Ajax简介 →
+    <a class="pull-right" href="/2019/11/07/JSP内置对象之request response out/">
+         →
     </a>
     
 </nav>

@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>jsp的request对象 | wecome</title>
+  <title>JSP内置对象response常见用法 | wecome</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,57 +173,51 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-10-30T10:46:12.000Z" itemprop="datePublished">
+      <time datetime="2019-10-29T16:00:00.000Z" itemprop="datePublished">
           2019-10-30
       </time>
     
 </span>
-                <h1>jsp的request对象</h1>
+                <h1>JSP内置对象response常见用法</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="jsp的request对象主要方法"><a href="#jsp的request对象主要方法" class="headerlink" title="jsp的request对象主要方法"></a>jsp的request对象主要方法</h3><h6 id="request对象的方法非常多，只写其中常用的几种方法。"><a href="#request对象的方法非常多，只写其中常用的几种方法。" class="headerlink" title="request对象的方法非常多，只写其中常用的几种方法。"></a>request对象的方法非常多，只写其中常用的几种方法。</h6><ul>
-<li><p><strong>getAttribute(String name);</strong>这个方法可以取出<strong>name</strong>属性的值，<strong>name</strong>属性的值可以用<strong>setAttribute(String name,Object o);</strong>方法赋值，如果没有对其赋值，则默认<strong>name</strong>为<strong>null</strong>;    </p>
-</li>
-<li><p><strong>getContexntPath();</strong>这个方法可以获取服务器上下文的路径；</p>
-</li>
-<li><p><strong>getCookies();</strong>这个方法可以获取客户端的Cookies（一个保存在客户机中的简单的文本文件）；</p>
-</li>
-<li><p><strong>getHeader(String name)</strong>这个方法可以获取指定名称的HTTP报头的属性值；</p>
-</li>
-<li><p><strong>getParameter(String name)</strong>这个方法可以获取客户端提交到服务器的参数；</p>
-</li>
-<li><p><strong>getServerName()</strong>这个方法可以获得服务器的名称</p>
-</li>
-<li><p><strong>getServerPort()</strong>这个方法可以获得服务器的访问端口</p>
-</li>
-<li><p><strong>setAttribute(String name,Object o);</strong>对name属性赋值</p>
-</li>
-<li><p><strong>removeAttribute(String name)</strong>这个方法移除指定名称的属性</p>
-</li>
-<li><p><strong>getRemoteAddr()</strong>这个方法返回客户端的IP地址</p>
-<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2></li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br><span class="line">    pageEncoding=<span class="string">"gb2312"</span>%&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">&lt;title&gt;request实例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">	request.setAttribute(<span class="string">"attr"</span>, <span class="string">"hello!"</span>);</span><br><span class="line">	out.print(<span class="string">"attr的值"</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"上下文路径"</span>+request.getContextPath()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Cookies:"</span>+request.getCookies()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Host:"</span>+request.getHeader(<span class="string">"Host"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器名称："</span>+request.getServerName()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器端口："</span>+request.getServerPort()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"客户端的IP地址："</span>+request.getRemoteAddr()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	request.removeAttribute(<span class="string">"attr"</span>);</span><br><span class="line">	out.print(<span class="string">"属性移除后的attr的值："</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      		<p><strong>一、重定向网页</strong></p>
+<p>重定向操作支持将地址重定向到不同的主机上，这一点与转发不同。在客户机浏览器上将会得到跳转的地址，并重新发送请求链接。进行重定向后，request中的属性全部失效，并开始一个新的request对象。</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> <span class="keyword">import</span>=<span class="string">"java.util.*"</span></span><br><span class="line">	contentType=<span class="string">"text/html; charset=UTF-8"</span> pageEncoding=<span class="string">"UTF-8"</span>%&gt;</span><br><span class="line">	&lt;%response.sendRedirect(<span class="string">"deal.jsp"</span>); %&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><img src="http://a1.qpic.cn/psb?/V13S9xI31Px2LW/p5RYDG8GnkBkSSMOzIUH7uJq0KspJo3TBS*Hf.Iwp9M!/c/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=nwEkAZ8BJAEDGTw!&tl=1&vuin=1458566939&tm=1571918400&sce=60-2-2&rf=0-0" style="zoom:150%;">
+<p> 在JSP页面中使用该方法时，不要再用JSP脚本代码包括return语句，因为重定向之后的代码已经没有意义。并且还可能产生错误。 </p>
+<p><strong>二、处理HTTP文件头</strong></p>
+<p>1、禁用缓存</p>
+<p>默认情况浏览器会对网页进行缓存，可以提高网页显示速度，但是对于一些安全性要求比较高的网站，通常需要禁用缓存。</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;% response.setHeader(<span class="string">"Cache-Control"</span>, <span class="string">"no-store"</span>);</span><br><span class="line">	   response.setDateHeader(<span class="string">"Expires"</span>, <span class="number">0</span>);%&gt;</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>补充一个<strong>request.setCharacterEncoding(“utf-8”);</strong>用来改变传递参数的编码</li>
-</ul>
+<p> 2、自动刷新 </p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 每隔<span class="number">10</span>秒自动刷新一次 --&gt;</span><br><span class="line">	&lt;% response.setHeader(<span class="string">"refresh"</span>, <span class="string">"10"</span>);%&gt;</span><br></pre></td></tr></table></figure>
+
+<p>3、定时跳转到网页</p>
+<p>5秒后自动跳转到指定网页：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% response.setHeader(<span class="string">"refresh"</span>, <span class="string">"5;URL=deal.jsp"</span>);%&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>三、设置输出缓冲</strong></p>
+<p>缓冲区的概念就不解释了，满足下面3种情况之一，就会把缓冲区的内容写到客户端。</p>
+<p>1、JSP页面的输出信息已经全部写入到了缓冲区</p>
+<p>2、缓冲区已满</p>
+<p>3、调用了response的flushBuffer或者out的flush方法。</p>
+<p><img src="C:%5CUsers%5C36127%5CDesktop%5Cbg.png" alt></p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/10/31/新手玩云服务器/" style="float: left;">
-        ← 新手玩云服务器
+    <a class="pull-left" href="/2019/10/30/Ajax简述/" style="float: left;">
+        ← Ajax简介
     </a>
     
     
-    <a class="pull-right" href="/2019/10/30/Ajax简述/">
-        Ajax简介 →
+    <a class="pull-right" href="/2019/10/30/安卓开发环境搭配/">
+        安卓开发环境搭配 →
     </a>
     
 </nav>

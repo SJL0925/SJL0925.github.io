@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>jsp的request对象 | wecome</title>
+  <title>Ajax简介 | wecome</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,57 +173,58 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-10-30T10:46:12.000Z" itemprop="datePublished">
+      <time datetime="2019-10-29T16:00:00.000Z" itemprop="datePublished">
           2019-10-30
       </time>
     
 </span>
-                <h1>jsp的request对象</h1>
+                <h1>Ajax简介</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="jsp的request对象主要方法"><a href="#jsp的request对象主要方法" class="headerlink" title="jsp的request对象主要方法"></a>jsp的request对象主要方法</h3><h6 id="request对象的方法非常多，只写其中常用的几种方法。"><a href="#request对象的方法非常多，只写其中常用的几种方法。" class="headerlink" title="request对象的方法非常多，只写其中常用的几种方法。"></a>request对象的方法非常多，只写其中常用的几种方法。</h6><ul>
-<li><p><strong>getAttribute(String name);</strong>这个方法可以取出<strong>name</strong>属性的值，<strong>name</strong>属性的值可以用<strong>setAttribute(String name,Object o);</strong>方法赋值，如果没有对其赋值，则默认<strong>name</strong>为<strong>null</strong>;    </p>
-</li>
-<li><p><strong>getContexntPath();</strong>这个方法可以获取服务器上下文的路径；</p>
-</li>
-<li><p><strong>getCookies();</strong>这个方法可以获取客户端的Cookies（一个保存在客户机中的简单的文本文件）；</p>
-</li>
-<li><p><strong>getHeader(String name)</strong>这个方法可以获取指定名称的HTTP报头的属性值；</p>
-</li>
-<li><p><strong>getParameter(String name)</strong>这个方法可以获取客户端提交到服务器的参数；</p>
-</li>
-<li><p><strong>getServerName()</strong>这个方法可以获得服务器的名称</p>
-</li>
-<li><p><strong>getServerPort()</strong>这个方法可以获得服务器的访问端口</p>
-</li>
-<li><p><strong>setAttribute(String name,Object o);</strong>对name属性赋值</p>
-</li>
-<li><p><strong>removeAttribute(String name)</strong>这个方法移除指定名称的属性</p>
-</li>
-<li><p><strong>getRemoteAddr()</strong>这个方法返回客户端的IP地址</p>
-<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2></li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br><span class="line">    pageEncoding=<span class="string">"gb2312"</span>%&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">&lt;title&gt;request实例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">	request.setAttribute(<span class="string">"attr"</span>, <span class="string">"hello!"</span>);</span><br><span class="line">	out.print(<span class="string">"attr的值"</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"上下文路径"</span>+request.getContextPath()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Cookies:"</span>+request.getCookies()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Host:"</span>+request.getHeader(<span class="string">"Host"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器名称："</span>+request.getServerName()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器端口："</span>+request.getServerPort()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"客户端的IP地址："</span>+request.getRemoteAddr()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	request.removeAttribute(<span class="string">"attr"</span>);</span><br><span class="line">	out.print(<span class="string">"属性移除后的attr的值："</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><img src="http://a1.qpic.cn/psb?/V13S9xI31Px2LW/p5RYDG8GnkBkSSMOzIUH7uJq0KspJo3TBS*Hf.Iwp9M!/c/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=nwEkAZ8BJAEDGTw!&tl=1&vuin=1458566939&tm=1571918400&sce=60-2-2&rf=0-0" style="zoom:150%;">
-
+      		<h1 id="AJAX-简介"><a href="#AJAX-简介" class="headerlink" title="AJAX 简介"></a>AJAX 简介</h1><hr>
+<p>AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。</p>
+<hr>
+<h2 id="您应当具备的基础知识"><a href="#您应当具备的基础知识" class="headerlink" title="您应当具备的基础知识"></a>您应当具备的基础知识</h2><p>在继续学习之前，您需要对下面的知识有基本的了解：</p>
 <ul>
-<li>补充一个<strong>request.setCharacterEncoding(“utf-8”);</strong>用来改变传递参数的编码</li>
+<li>HTML / XHTML</li>
+<li>CSS</li>
+<li>JavaScript / DOM</li>
 </ul>
+<p>如果您希望首先学习这些项目，请在我们的<a href="https://www.runoob.com/" target="_blank" rel="noopener">首页</a>访问这些教程。</p>
+<hr>
+<h2 id="什么是-AJAX-？"><a href="#什么是-AJAX-？" class="headerlink" title="什么是 AJAX ？"></a>什么是 AJAX ？</h2><p>AJAX = 异步 JavaScript 和 XML。</p>
+<p>AJAX 是一种用于创建快速动态网页的技术。</p>
+<p>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<p>传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。</p>
+<p>有很多使用 AJAX 的应用程序案例：新浪微博、Google 地图、开心网等等。</p>
+<hr>
+<h2 id="AJAX-工作原理"><a href="#AJAX-工作原理" class="headerlink" title="AJAX 工作原理"></a>AJAX 工作原理</h2><p><img src="https://www.runoob.com/wp-content/uploads/2013/09/ajax-yl.png" alt="AJAX"></p>
+<hr>
+<h2 id="AJAX是基于现有的Internet标准"><a href="#AJAX是基于现有的Internet标准" class="headerlink" title="AJAX是基于现有的Internet标准"></a>AJAX是基于现有的Internet标准</h2><p>AJAX是基于现有的Internet标准，并且联合使用它们：</p>
+<ul>
+<li>XMLHttpRequest 对象 (异步的与服务器交换数据)</li>
+<li>JavaScript/DOM (信息显示/交互)</li>
+<li>CSS (给数据定义样式)</li>
+<li>XML (作为转换数据的格式)</li>
+</ul>
+<p><img src="https://www.runoob.com/images/lamp.gif" alt="lamp">  AJAX应用程序与浏览器和平台无关的！</p>
+<hr>
+<h2 id="Google-Suggest"><a href="#Google-Suggest" class="headerlink" title="Google Suggest"></a>Google Suggest</h2><p>在 2005 年，Google 通过其 Google Suggest 使 AJAX 变得流行起来。</p>
+<p>Google Suggest 使用 AJAX 创造出动态性极强的 web 界面：当您在谷歌的搜索框输入关键字时，JavaScript 会把这些字符发送到服务器，然后服务器会返回一个搜索建议的列表。</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/10/31/新手玩云服务器/" style="float: left;">
-        ← 新手玩云服务器
+    <a class="pull-left" href="/2019/10/30/jsp的request对象/" style="float: left;">
+        ← jsp的request对象
     </a>
     
     
-    <a class="pull-right" href="/2019/10/30/Ajax简述/">
-        Ajax简介 →
+    <a class="pull-right" href="/2019/10/30/JSP内置对象response常见用法/">
+        JSP内置对象response常见用法 →
     </a>
     
 </nav>

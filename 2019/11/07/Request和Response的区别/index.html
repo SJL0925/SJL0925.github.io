@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>jsp的request对象 | wecome</title>
+  <title>wecome</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,57 +173,43 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-10-30T10:46:12.000Z" itemprop="datePublished">
-          2019-10-30
+      <time datetime="2019-11-07T00:20:36.755Z" itemprop="datePublished">
+          2019-11-07
       </time>
     
 </span>
-                <h1>jsp的request对象</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="jsp的request对象主要方法"><a href="#jsp的request对象主要方法" class="headerlink" title="jsp的request对象主要方法"></a>jsp的request对象主要方法</h3><h6 id="request对象的方法非常多，只写其中常用的几种方法。"><a href="#request对象的方法非常多，只写其中常用的几种方法。" class="headerlink" title="request对象的方法非常多，只写其中常用的几种方法。"></a>request对象的方法非常多，只写其中常用的几种方法。</h6><ul>
-<li><p><strong>getAttribute(String name);</strong>这个方法可以取出<strong>name</strong>属性的值，<strong>name</strong>属性的值可以用<strong>setAttribute(String name,Object o);</strong>方法赋值，如果没有对其赋值，则默认<strong>name</strong>为<strong>null</strong>;    </p>
-</li>
-<li><p><strong>getContexntPath();</strong>这个方法可以获取服务器上下文的路径；</p>
-</li>
-<li><p><strong>getCookies();</strong>这个方法可以获取客户端的Cookies（一个保存在客户机中的简单的文本文件）；</p>
-</li>
-<li><p><strong>getHeader(String name)</strong>这个方法可以获取指定名称的HTTP报头的属性值；</p>
-</li>
-<li><p><strong>getParameter(String name)</strong>这个方法可以获取客户端提交到服务器的参数；</p>
-</li>
-<li><p><strong>getServerName()</strong>这个方法可以获得服务器的名称</p>
-</li>
-<li><p><strong>getServerPort()</strong>这个方法可以获得服务器的访问端口</p>
-</li>
-<li><p><strong>setAttribute(String name,Object o);</strong>对name属性赋值</p>
-</li>
-<li><p><strong>removeAttribute(String name)</strong>这个方法移除指定名称的属性</p>
-</li>
-<li><p><strong>getRemoteAddr()</strong>这个方法返回客户端的IP地址</p>
-<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2></li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br><span class="line">    pageEncoding=<span class="string">"gb2312"</span>%&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">&lt;title&gt;request实例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">	request.setAttribute(<span class="string">"attr"</span>, <span class="string">"hello!"</span>);</span><br><span class="line">	out.print(<span class="string">"attr的值"</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"上下文路径"</span>+request.getContextPath()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Cookies:"</span>+request.getCookies()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Host:"</span>+request.getHeader(<span class="string">"Host"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器名称："</span>+request.getServerName()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器端口："</span>+request.getServerPort()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"客户端的IP地址："</span>+request.getRemoteAddr()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	request.removeAttribute(<span class="string">"attr"</span>);</span><br><span class="line">	out.print(<span class="string">"属性移除后的attr的值："</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      		<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> title: Request和Response的区别</span><br><span class="line">date: 2019-11-3</span><br></pre></td></tr></table></figure>
 
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><img src="http://a1.qpic.cn/psb?/V13S9xI31Px2LW/p5RYDG8GnkBkSSMOzIUH7uJq0KspJo3TBS*Hf.Iwp9M!/c/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=nwEkAZ8BJAEDGTw!&tl=1&vuin=1458566939&tm=1571918400&sce=60-2-2&rf=0-0" style="zoom:150%;">
+<p>Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。</p>
+<p>一、Request对象的五个集合：</p>
+<p>QueryString：用以获取客户端附在url地址后的查询字符串中的信息。</p>
+<pre><code>例如：stra=Request.QueryString [&quot;strUserld&quot;]</code></pre><p>Form：用以获取客户端在FORM表单中所输入的信息。（表单的method属性值需要为POST）</p>
+<pre><code>例如：stra=Request.Form[&quot;strUserld&quot;]</code></pre><p>Cookies：用以获取客户端的Cookie信息。</p>
+<pre><code>例如：stra=Request.Cookies[&quot;strUserld&quot;]</code></pre><p>ServerVariables：用以获取客户端发出的HTTP请求信息中的头信息及服务器端环境变量信息。</p>
+<pre><code>例如：stra=Request.ServerVariables[&quot;REMOTE_ADDR&quot;],返回客户端IP地址</code></pre><p>ClientCertificate：用以获取客户端的身份验证信息</p>
+<pre><code>例如：stra=Request.ClientCertificate[&quot;VALIDFORM&quot;],对于要求安全验证的网站，返回有效起始日期。</code></pre><p>二、Response对象<br>    Response对象用于动态响应客户端请示，控制发送给用户的信息，并将动态生成响应。Response对象提供了一个数据集合cookie，它用于在客户端写入cookie值。若指定的cookie不存在，则创建它。若存在，则将自动进行更新。结果返回给客户端浏览器。<br>    语法格式：Response.Cookies(CookieName)[(key)|.attribute]=value。这里的CookiesName是指定的Cookie的名称，如果指定了Key，则该Cookie就是一个字典，Attribute属性包括Domain，Expires，HasKeys，Path，Secure。</p>
+<p>response的方法:</p>
+<pre><code>Write：向客户端发送浏览器能够处理的各种数据,包括:html代码,脚本程序等。
 
-<ul>
-<li>补充一个<strong>request.setCharacterEncoding(“utf-8”);</strong>用来改变传递参数的编码</li>
-</ul>
+Redirect：response.redirect(&quot;url&quot;)的作用是在服务器端重定向于另一个网页。
 
+End：用来终止脚本程序。
+
+Clear：要说到Clear方法，就必须提到response的Buffer属性，Buffer属性用来设置服务器端是否将页面先输出到缓冲区。语法为：Response.Buffer=True/False
+
+Flush：当Buffer的值为True时，Flush方法用于将缓冲区中的当前页面内容立刻输出到客户端。</code></pre>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/10/31/新手玩云服务器/" style="float: left;">
-        ← 新手玩云服务器
-    </a>
     
-    
-    <a class="pull-right" href="/2019/10/30/Ajax简述/">
-        Ajax简介 →
+    <a class="pull-right" href="/2019/11/07/jsp中post和get的区别及使用/">
+         →
     </a>
     
 </nav>

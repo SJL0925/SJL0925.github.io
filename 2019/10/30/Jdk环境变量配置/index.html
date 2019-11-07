@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>jsp的request对象 | wecome</title>
+  <title>Jdk环境变量配置 | wecome</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -173,43 +173,84 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-10-30T10:46:12.000Z" itemprop="datePublished">
+      <time datetime="2019-10-29T16:00:00.000Z" itemprop="datePublished">
           2019-10-30
       </time>
     
 </span>
-                <h1>jsp的request对象</h1>
+                <h1>Jdk环境变量配置</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="jsp的request对象主要方法"><a href="#jsp的request对象主要方法" class="headerlink" title="jsp的request对象主要方法"></a>jsp的request对象主要方法</h3><h6 id="request对象的方法非常多，只写其中常用的几种方法。"><a href="#request对象的方法非常多，只写其中常用的几种方法。" class="headerlink" title="request对象的方法非常多，只写其中常用的几种方法。"></a>request对象的方法非常多，只写其中常用的几种方法。</h6><ul>
-<li><p><strong>getAttribute(String name);</strong>这个方法可以取出<strong>name</strong>属性的值，<strong>name</strong>属性的值可以用<strong>setAttribute(String name,Object o);</strong>方法赋值，如果没有对其赋值，则默认<strong>name</strong>为<strong>null</strong>;    </p>
-</li>
-<li><p><strong>getContexntPath();</strong>这个方法可以获取服务器上下文的路径；</p>
-</li>
-<li><p><strong>getCookies();</strong>这个方法可以获取客户端的Cookies（一个保存在客户机中的简单的文本文件）；</p>
-</li>
-<li><p><strong>getHeader(String name)</strong>这个方法可以获取指定名称的HTTP报头的属性值；</p>
-</li>
-<li><p><strong>getParameter(String name)</strong>这个方法可以获取客户端提交到服务器的参数；</p>
-</li>
-<li><p><strong>getServerName()</strong>这个方法可以获得服务器的名称</p>
-</li>
-<li><p><strong>getServerPort()</strong>这个方法可以获得服务器的访问端口</p>
-</li>
-<li><p><strong>setAttribute(String name,Object o);</strong>对name属性赋值</p>
-</li>
-<li><p><strong>removeAttribute(String name)</strong>这个方法移除指定名称的属性</p>
-</li>
-<li><p><strong>getRemoteAddr()</strong>这个方法返回客户端的IP地址</p>
-<h2 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h2></li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">"java"</span> contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br><span class="line">    pageEncoding=<span class="string">"gb2312"</span>%&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">&lt;title&gt;request实例&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">	request.setAttribute(<span class="string">"attr"</span>, <span class="string">"hello!"</span>);</span><br><span class="line">	out.print(<span class="string">"attr的值"</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"上下文路径"</span>+request.getContextPath()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Cookies:"</span>+request.getCookies()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"Host:"</span>+request.getHeader(<span class="string">"Host"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器名称："</span>+request.getServerName()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"服务器端口："</span>+request.getServerPort()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	out.print(<span class="string">"客户端的IP地址："</span>+request.getRemoteAddr()+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	request.removeAttribute(<span class="string">"attr"</span>);</span><br><span class="line">	out.print(<span class="string">"属性移除后的attr的值："</span>+request.getAttribute(<span class="string">"attr"</span>)+<span class="string">"&lt;br&gt;"</span>);</span><br><span class="line">	</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><img src="http://a1.qpic.cn/psb?/V13S9xI31Px2LW/p5RYDG8GnkBkSSMOzIUH7uJq0KspJo3TBS*Hf.Iwp9M!/c/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=nwEkAZ8BJAEDGTw!&tl=1&vuin=1458566939&tm=1571918400&sce=60-2-2&rf=0-0" style="zoom:150%;">
-
+      		<h1 id="JDK-开发环境配置"><a href="#JDK-开发环境配置" class="headerlink" title="JDK 开发环境配置"></a>JDK 开发环境配置</h1><p>在本章节中我们将为大家介绍如何搭建Java开发环境。</p>
 <ul>
-<li>补充一个<strong>request.setCharacterEncoding(“utf-8”);</strong>用来改变传递参数的编码</li>
+<li><a href="https://www.runoob.com/java/java-environment-setup.html#win-install" target="_blank" rel="noopener">Windows 上安装开发环境</a></li>
+<li><a href="https://www.runoob.com/java/java-environment-setup.html#linux-install" target="_blank" rel="noopener">Linux 上安装开发环境</a></li>
+<li><a href="https://www.runoob.com/java/java-environment-setup.html#eclipse-install" target="_blank" rel="noopener">安装 Eclipse 运行 Java</a></li>
+</ul>
+<hr>
+<h2 id="window系统安装java"><a href="#window系统安装java" class="headerlink" title="window系统安装java"></a>window系统安装java</h2><h3 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h3><p>首先我们需要下载java开发工具包JDK，下载地址：<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html，点击如下下载按钮：" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/index.html，点击如下下载按钮：</a></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-download.jpg" alt="img"></p>
+<p>在下载页面中你需要选择接受许可，并根据自己的系统选择对应的版本，本文以 Window 64位系统为例：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-download-1.jpg" alt="img"></p>
+<p>下载后JDK的安装根据提示进行，还有安装JDK的时候也会安装JRE，一并安装就可以了。</p>
+<p>安装JDK，安装过程中可以自定义安装目录等信息，例如我们选择安装目录为 <strong>C:\Program Files (x86)\Java\jdk1.8.0_91</strong>。</p>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>1.安装完成后，右击”我的电脑”，点击”属性”，选择”高级系统设置”；</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/win-java1.png" alt="img"></p>
+<p>2.选择”高级”选项卡，点击”环境变量”；</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win2.png" alt="img"></p>
+<p>然后就会出现如下图所示的画面：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win3.png" alt="img"></p>
+<blockquote>
+<p><strong>注意：</strong>如果使用 1.5 以上版本的 JDK，不用设置 CLASSPATH 环境变量，也可以正常编译和运行 Java 程序。</p>
+</blockquote>
+<p>变量设置参数如下：</p>
+<ul>
+<li><p>变量名：<strong>JAVA_HOME</strong></p>
+</li>
+<li><p>变量值：<strong>C:\Program Files (x86)\Java\jdk1.8.0_91</strong>        // 要根据自己的实际路径配置</p>
+</li>
+<li><p>变量名：<strong>CLASSPATH</strong></p>
+</li>
+<li><p>变量值：<strong>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</strong>         //记得前面有个”.”</p>
+</li>
+<li><p>变量名：<strong>Path</strong></p>
+</li>
+<li><p>变量值：<strong>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</strong></p>
+</li>
+</ul>
+<h3 id="JAVA-HOME-设置"><a href="#JAVA-HOME-设置" class="headerlink" title="JAVA_HOME 设置"></a>JAVA_HOME 设置</h3><p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win4.png" alt="img"></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win5.png" alt="img"></p>
+<h3 id="PATH设置"><a href="#PATH设置" class="headerlink" title="PATH设置"></a>PATH设置</h3><p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win6.png" alt="img"></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win7.png" alt="img"></p>
+<blockquote>
+<p><strong>注意：</strong>在 Windows10 中，Path 变量里是分条显示的，我们需要将 <strong>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</strong> 分开添加，否则无法识别：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; %JAVA_HOME%\bin;</span><br><span class="line">&gt; %JAVA_HOME%\jre\bin;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/44A70696-B2E6-4055-B88F-7FC0222DCCA4.png" alt="img"></p>
+<p>更多内容可参考：<a href="https://www.runoob.com/w3cnote/windows10-java-setup.html" target="_blank" rel="noopener">Windows 10 配置Java 环境变量</a></p>
+</blockquote>
+<h3 id="CLASSPATH-设置"><a href="#CLASSPATH-设置" class="headerlink" title="CLASSPATH 设置"></a>CLASSPATH 设置</h3><p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win8.png" alt="img"></p>
+<p>这是 Java 的环境配置，配置完成后，你可以启动 Eclipse 来编写代码，它会自动完成java环境的配置。</p>
+<h3 id="测试JDK是否安装成功"><a href="#测试JDK是否安装成功" class="headerlink" title="测试JDK是否安装成功"></a>测试JDK是否安装成功</h3><p>1、”开始”-&gt;”运行”，键入”cmd”；</p>
+<p>2、键入命令: <strong>java -version</strong>、<strong>java</strong>、<strong>javac</strong> 几个命令，出现以下信息，说明环境变量配置成功；</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/java-win9.png" alt="img"></p>
+<hr>
+<h2 id="Linux，UNIX，Solaris，FreeBSD环境变量设置"><a href="#Linux，UNIX，Solaris，FreeBSD环境变量设置" class="headerlink" title="Linux，UNIX，Solaris，FreeBSD环境变量设置"></a>Linux，UNIX，Solaris，FreeBSD环境变量设置</h2><p>环境变量PATH应该设定为指向Java二进制文件安装的位置。如果设置遇到困难，请参考shell文档。</p>
+<p>例如，假设你使用bash作为shell，你可以把下面的内容添加到你的 .bashrc文件结尾: export PATH=/path/to/java:$PATH</p>
+<hr>
+<h2 id="流行JAVA开发工具"><a href="#流行JAVA开发工具" class="headerlink" title="流行JAVA开发工具"></a>流行JAVA开发工具</h2><p>正所谓工欲善其事必先利其器，我们在开发java语言过程中同样需要一款不错的开发工具，目前市场上的IDE很多，本文为大家推荐以下下几款java开发工具：</p>
+<ul>
+<li><p><strong>Eclipse（推荐）:</strong>另一个免费开源的java IDE，下载地址： <a href="http://www.eclipse.org/downloads/packages/" target="_blank" rel="noopener">http://www.eclipse.org/downloads/packages/</a></p>
+<p>选择 <strong>Eclipse IDE for Java Developers</strong>：<br><img src="https://www.runoob.com/wp-content/uploads/2013/12/5A92DEAE-EFB9-493D-AC4D-808E529B533C.jpg" alt="img"></p>
+</li>
+<li><p><strong>JetBrains</strong> 的 IDEA， 现在很多人开始使用了，功能很强大，下载地址：<a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/</a></p>
+</li>
+<li><p><strong>Notepad++ :</strong> Notepad++ 是在微软视窗环境之下的一个免费的代码编辑器，下载地址：<a href="http://notepad-plus-plus.org/" target="_blank" rel="noopener"> http://notepad-plus-plus.org/</a></p>
+</li>
+<li><p><strong>Netbeans:</strong>开源免费的java IDE，下载地址： <a href="http://www.netbeans.org/index.html" target="_blank" rel="noopener">http://www.netbeans.org/index.html</a></p>
+</li>
 </ul>
 
             <div class="clearfix"></div>
@@ -217,13 +258,13 @@
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/10/31/新手玩云服务器/" style="float: left;">
-        ← 新手玩云服务器
+    <a class="pull-left" href="/2019/10/30/安卓开发环境搭配/" style="float: left;">
+        ← 安卓开发环境搭配
     </a>
     
     
-    <a class="pull-right" href="/2019/10/30/Ajax简述/">
-        Ajax简介 →
+    <a class="pull-right" href="/2019/10/22/hexo搭建个人博客/">
+        hexo搭建个人博客 →
     </a>
     
 </nav>
