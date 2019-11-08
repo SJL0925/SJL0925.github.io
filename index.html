@@ -205,11 +205,11 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2019/11/07/Request和Response的区别/"></a></h3>
+                    <h3><a href="/2019/11/08/JSP内置对象之request-response-out/">JSP内置对象之request response out</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2019-11-07T00:20:36.755Z" itemprop="datePublished">
-          2019-11-07
+      <time datetime="2019-11-08T03:28:23.000Z" itemprop="datePublished">
+          2019-11-08
       </time>
     
 </span>
@@ -218,17 +218,13 @@
                 <div class="col-md-8">
                     <p>
                       
-                        12 title: Request和Response的区别date: 2019-11-3
-
-Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。
-一、Request对象的五个集合：
-QueryString：用以获取客户端附在url地址后的查询字符串中的信息。
-例如：stra=Reque
+                        一、out对象：out对象是JspWriter类的实例，是向客户端输出内容常用的对象。常用方法如下
+123456781.void println() 向客户端打印字符串2.void clear()  清除缓冲区的内容，如果在flush()之后调用会抛出异常3.void clearBuffer() 清除缓冲区的内容，如果在flush()之后调用不会抛出异常4.void flush()  将缓冲区内容输出到客户端5.int getBuffe
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2019/11/07/Request和Response的区别/">Read More...</a>
+                        <a href="/2019/11/08/JSP内置对象之request-response-out/">Read More...</a>
                     </p>
                     
                 </div>
@@ -240,11 +236,11 @@ QueryString：用以获取客户端附在url地址后的查询字符串中的信
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2019/11/07/jsp中post和get的区别及使用/"></a></h3>
+                    <h3><a href="/2019/11/08/jsp中post和get的区别及使用/">jsp中post和get的区别及使用</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2019-11-07T00:20:18.789Z" itemprop="datePublished">
-          2019-11-07
+      <time datetime="2019-11-08T03:28:07.000Z" itemprop="datePublished">
+          2019-11-08
       </time>
     
 </span>
@@ -253,15 +249,15 @@ QueryString：用以获取客户端附在url地址后的查询字符串中的信
                 <div class="col-md-8">
                     <p>
                       
-                        jsp中post和get的区别及使用1：请求数据的大小不同。
+                        1：请求数据的大小不同。
 因为get请求的数据是要追加到URL中，而URL的数据量一般不能超过2K，所以用get请求的方法对数据的大小有限制。而post请求方法是把数据放在消息体中，所以理论上对数据量没有限制。（但是实际操作中也不能能太大）
 2：安全性不一样
-因为get请求的数据是追加在URL中，外部用户能很方便的看到，从这个角度上来讲不安全。而post方法因为是讲请求放在消息体中，不会直接在URL中
+因为get请求的数据是追加在URL中，外部用户能很方便的看到，从这个角度上来讲不安全。而post方法因为是讲请求放在消息体中，不会直接在URL中显示所以从这个角度来说数据会比较安全
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2019/11/07/jsp中post和get的区别及使用/">Read More...</a>
+                        <a href="/2019/11/08/jsp中post和get的区别及使用/">Read More...</a>
                     </p>
                     
                 </div>
@@ -273,11 +269,11 @@ QueryString：用以获取客户端附在url地址后的查询字符串中的信
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2019/11/07/JSP内置对象之request response out/"></a></h3>
+                    <h3><a href="/2019/11/08/Request和Response的区别/">Request和Response的区别</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2019-11-07T00:20:06.233Z" itemprop="datePublished">
-          2019-11-07
+      <time datetime="2019-11-08T03:27:47.000Z" itemprop="datePublished">
+          2019-11-08
       </time>
     
 </span>
@@ -286,13 +282,15 @@ QueryString：用以获取客户端附在url地址后的查询字符串中的信
                 <div class="col-md-8">
                     <p>
                       
-                        JSP内置对象之request response out一、out对象：out对象是JspWriter类的实例，是向客户端输出内容常用的对象。常用方法如下
-123456781.void println() 向客户端打印字符串2.void clear()  清除缓冲区的内容，如果在flush()之后调用会抛出异常3.void clearBuffer() 清除缓冲区的内容，如果在flush()之后调用不会抛出异常4.void flush()
+                        Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。
+一、Request对象的五个集合：
+QueryString：用以获取客户端附在url地址后的查询字符串中的信息。
+例如：stra=Request.QueryString [&quot;strUserld&quot;]Form：用以获
                       
                     </p>
                     
                     <p class="pull-right readMore">
-                        <a href="/2019/11/07/JSP内置对象之request response out/">Read More...</a>
+                        <a href="/2019/11/08/Request和Response的区别/">Read More...</a>
                     </p>
                     
                 </div>
