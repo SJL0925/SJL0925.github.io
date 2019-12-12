@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>jsp语法与jsp基本知识点 | wecome</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="wecome">
+    <meta name="author" content="Michael">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="wecome" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">wecome</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2019-12-12T01:32:10.000Z" itemprop="datePublished">
+          2019-12-12
+      </time>
+    
+</span>
+                <h1>jsp语法与jsp基本知识点</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>【jsp基本知识点】<br>JSP全称是Java Server Pages,它和servlet技术一样，都是SUN公司定义的一种用于开发动态web资源的技术。<br>JSP/Servlet规范。 JSP实际上就是Servlet<br>JSP这门技术的最大的特点在于，写jsp就像在写html，但它相比html而言，html只能为用户提供静态数据，而jsp技术允许在页面中嵌套java代码，为用户提供动态数据。</p>
+<p>[JSP模板元素]<br>JSP页面中的HTML内容称之为JSP模板元素<br>JSP模板元素定义了网页的基本骨架，即定义了页面的结构和外观。</p>
+<p>jsp的几大对象<br>    PageContext pageContext = null;<br>    HttpSession session = null;<br>    ServletContext application = null;<br>    ServletConfig config = null;<br>    JspWriter out = null;<br>    Object page = this;<br>    JspWriter _jspx_out = null;<br>    PageContext _jspx_page_context = null;</p>
+<pre><code>_jspx_page_context = pageContext;
+application = pageContext.getServletContext();
+config = pageContext.getServletConfig();
+session = pageContext.getSession();
+out = pageContext.getOut();
+_jspx_out = out;</code></pre><p>[JSP的脚本，如下]</p>
+  <body>
+      <% request.setattribute("name", "张三"); request.getrequestdispatcher(" one02.jsp").forward(request, response); %>
+  </%></body>
+ 在【<% ****** %>】之前的java代码称作为jsp脚本
+
+<p> [JSP表达式，如下]</p>
+   <body>
+     脚本表达式（输出一个变量）:<%=request.getattribute("name") %>
+  </%=request.getattribute("name")></body>
+在【<%=这里写表达式 %>】这样的表示jsp表达式，注意：表达式不是语句，所有最后不能有“;”号
+
+
+<p>例如：如下代码</p>
+<pre><code>&lt;table border=1 width=&quot;200&quot;&gt;
+    &lt;%
+        for(int i=0;i&lt;4;i++){
+     %&gt;
+         &lt;tr&gt;
+             &lt;td&gt;&lt;%=i %&gt;&lt;/td&gt;
+             &lt;td&gt;112&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;%
+         }
+      %&gt;
+&lt;/table&gt;</code></pre><p>显示结果为：</p>
+<p>在jsp页面中，可以用上述方法巧妙的运用HTML页面标签和jsp的java脚本和表达式组成循环，输出table</p>
+<p>[jsp声明]</p>
+<pre><code>&lt;%!
+    int a=0;
+    public void add(){
+        System.out.println(&quot;大家好&quot;);
+    }
+
+    public class A{
+        public void add1(){
+            System.out.println(&quot;大家好，我是内部类&quot;);
+        }
+    }
+ %&gt;
+ &lt;% 
+         this.add(); 
+         A a=new A();
+         a.add1();
+  %&gt;</code></pre><p>后台自动编译后会变成：</p>
+<p>可以发现jsp声明中的变量，会变成类的属性，而类会变成内部类。</p>
+<p>在【&lt;%！ <strong>**</strong> %&gt;】里面的java代码里面可以定义方法和属性</p>
+<p>[jsp注释]</p>
+  <body>
+    <%-- 我是jsp注释 --%>
+  </%--></body>
+JSP引擎在将jsp页面翻译成Servlet程序时，忽略JSP页面中被注释的内容。
+
+<p>[JSP指令]<br>JSP指令（directive）是为JSP引擎而设计的，它们并不直接产生任何可见输出，而只是告诉引擎如何处理JSP页面中的其余部分。<br>在JSP2.0规范中共定义了三个指令：</p>
+<p>静态指令<br>page指令<br>lnclude指令<br>taglib指令</p>
+<p>例如：<br>&lt;%@ page import=”java.awt.*” %&gt;<br>可以使用page指令引用java包到页面上。<br>在【&lt;%@ ***　％＞】中的属性又如下：<br>【pageEncoding=”UTF-8”】设置jsp页面的默认编码和客户端页面的默认编码为UTF-8<br>【contentType=”text/html;charset=ISO-8859-1”】设置客户端编码，默认是ISO-8859-1和pageEncoding在页面的显示上没有任何区别<br>【import=””】用来在当前jsp页面中引入jar包<br>【language=”java”】 指定当前页面支持的脚本语言为java(目前jsp只支持java脚本语言)<br>【autoFlush=”true”】是否自动刷新,由服务端向客户端自动发送数据（一般不要修改）<br>【buffer=”8kb”】指定缓冲区大小默认是8kb<br>【extends】继承，可以修改继承的类，可以自己写类继承。默认继承了一个类。<br>【info】键值对，可以在服务端拿到。一般很少用<br>【isELIgnored=”false”】是否支持EL表达式，如果是true，表示不支持EL表达式。<br>【isThreadSafe=”true”】是否是线程安全，默认是true,表示是线程安全<br>【session=”true”】是否可以在页面中使用session。默认是true，表示在jsp页面上可以直接使用。</p>
+<p>【isErrorPage】定义当前页面是否是错误处理页面。默认是false 不是错误处理页面<br>【errorPage】指定当前页面jsp脚本发送错误时，错误处理页面时那个。一般和isErrorPage一起使用。相当于错误处理机制</p>
+<p>page指令用于定义JSP页面的各种属性，无论page指令出现在JSP页面的什么地方，它作用的都是整个JSP页面，为了保持程序的可读性和遵循良好的编程习惯，page指令最好放在整个JSP页面的起始位置。<br>errorPage属性的设置值为一路径（相对或者绝对），如果以“/“开头，表示相对于当前WEB应用程序的根目录（注意站点根目录，否则，表示新队路径）<br>可以在web.xml文件中使用<exception-type>子元素指定异常类的完全限定名，<loaction>元素指定以”/“开头的错误处理页面路径。</loaction></exception-type></p>
+<p>在web.xml配置全局的应该如下：</p>
+  <error-page>
+      <error-code>404</error-code>
+      <location>/one04.jsp</location>
+  </error-page>
+
+
+<p>如下是演示一种error错误处理</p>
+<p>触发错误页面代码为：</p>
+<p>&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8”  errorPage=”one05.jsp” %&gt;<br>&lt;%<br>String path = request.getContextPath();<br>String basePath = request.getScheme()+”://“+request.getServerName()+”:”+request.getServerPort()+path+”/“;<br>%&gt;</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <base href="<%=basePath%>">
+
+<pre><code>&lt;title&gt;演示error异常处理&lt;/title&gt;
+
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;    
+&lt;meta http-equiv=&quot;keywords&quot; content=&quot;keyword1,keyword2,keyword3&quot;&gt;
+&lt;meta http-equiv=&quot;description&quot; content=&quot;This is my page&quot;&gt;</code></pre>  </head>
+
+  <body>
+  <% out.write("aaa你好"); out.write(10 0); 保证一定会出现异常 %>
+  </%></body>
+</html>
+
+<p>定义错误处理页面代码为：<br>&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8” isErrorPage=”true”%&gt;<br>&lt;%<br>String path = request.getContextPath();<br>String basePath = request.getScheme()+”://“+request.getServerName()+”:”+request.getServerPort()+path+”/“;<br>%&gt;</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <base href="<%=basePath%>">
+
+<pre><code>&lt;title&gt;本页面为异常处理页面&lt;/title&gt;
+
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;    
+&lt;meta http-equiv=&quot;keywords&quot; content=&quot;keyword1,keyword2,keyword3&quot;&gt;
+&lt;meta http-equiv=&quot;description&quot; content=&quot;This is my page&quot;&gt;</code></pre>  </head>
+
+  <body>
+  服务器正忙，请一会访问！
+    <% string str="exception.getMessage();" out.write(str); %>
+  </%></body>
+</html>
+
+<p>显示结果为：</p>
+<p>include包含<br>1.静态包含：指代码级别的包含，指将目标页面的源码拷贝一份包含进来<br>2.动态包含：指是执行目标页面，将结果包含进来<br>例如：</p>
+<p>&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8”  %&gt;<br>&lt;%@ page import=”java.awt.*” %&gt;<br>&lt;%<br>String path = request.getContextPath();<br>String basePath = request.getScheme()+”://“+request.getServerName()+”:”+request.getServerPort()+path+”/“;<br>%&gt;</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <base href="<%=basePath%>">
+
+<pre><code>&lt;title&gt;jsp指令标签3个&lt;/title&gt;
+
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;    
+&lt;meta http-equiv=&quot;keywords&quot; content=&quot;keyword1,keyword2,keyword3&quot;&gt;
+&lt;meta http-equiv=&quot;description&quot; content=&quot;This is my page&quot;&gt;
+&lt;!--
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+--&gt;</code></pre>  </head>
+
+  <body>
+    <%-- 我是jsp注释 --%>
+    <!-- 静态包含 -->
+    <%@ include file="one06.jsp" %>
+    <!-- 动态包含 -->
+    <jsp:include page="one07.jsp"></jsp:include>
+  </%@></%--></body>
+</html>
+
+<p>one06.jsp页面为：<br>&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+
+<pre><code>&lt;title&gt;include指令《静态包含》&lt;/title&gt;
+
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;    
+&lt;meta http-equiv=&quot;keywords&quot; content=&quot;keyword1,keyword2,keyword3&quot;&gt;
+&lt;meta http-equiv=&quot;description&quot; content=&quot;This is my page&quot;&gt;
+&lt;!--
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+--&gt;</code></pre>  </head>
+
+  <body>
+    静态包含，我是页面one06 <br>
+  </body>
+</html>
+
+
+<p>one07.jsp页面为：<br>&lt;%@ page language=”java” import=”java.util.*” pageEncoding=”UTF-8”%&gt;<br>&lt;%<br>String path = request.getContextPath();<br>String basePath = request.getScheme()+”://“+request.getServerName()+”:”+request.getServerPort()+path+”/“;<br>%&gt;</p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <base href="<%=basePath%>">
+
+<pre><code>&lt;title&gt;include动态包含&lt;/title&gt;
+
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;    
+&lt;meta http-equiv=&quot;keywords&quot; content=&quot;keyword1,keyword2,keyword3&quot;&gt;
+&lt;meta http-equiv=&quot;description&quot; content=&quot;This is my page&quot;&gt;
+&lt;!--
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+--&gt;</code></pre>  </head>
+
+  <body>
+   我也页面07 <br>
+  </body>
+</html>
+
+<p>include指令用于引入其他JSP页面，如果使用include指令引入了其它JSP页面，那么JSP引擎将把这两个JSP翻译成一个servlet。所以include指令通常也称为静态引入。<br>语法：<br>&lt;%@ include file=”被包含组件的绝对URL” %&gt;<br>其中file属性用于指定被引入文件的路径。路径以”/“开头，表示当前web应用。<br>细节：<br>被引入的文件必须遵循JSP语法<br>被引入的文件可以使用任意的扩展名，即使其扩展名为html,JSP引擎也会按照处理JSP页面的方式处理它里面的内容，JSP规范建议使用.jspf(JSP fragments)作为静态引入文件的扩展名。<br>由于使用include指令将会涉及到2个jsp页面，并会把2个JSP翻译成一个servlet,所以2个JSP页面的指令不能冲突（除了pageEncoding和导包除外）。</p>
+<p>Taglib指令用于在JSP页面中导入标签库</p>
+<p>【JSP标签】<br>JSP标签也称之为JspAction(JSP动作)元素，它用于在Jsp页面中提供业务逻辑功能，避免在JSP页面中直接编写java代码，造成jsp页面难维护。<br>JSP常用的标签：<br><a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>标签<br><a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a>标签<br><a href="jsp:param" target="_blank" rel="noopener">jsp:param</a>标签</p>
+<p> [<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>]标签<br>用于吧另外一个资源的输出内容插入进当前JSP页面的输出内容之中，这种在JSP页面执行时的引入方式称之为动态引入<br>语法： &lt;jsp:include page=”relativeURL | &lt;%=expression%&gt;” flush=”true|false” /&gt;<br>page属性用于指定引入资源的相对路径，它也可以通过执行一个表达式来获得。<br>flush属性指定在次啊如其它资源的输出内容时，是否先将当前JSP页面的以输出的内容刷新到客户端。</p>
+<p><a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>标签是动态引入，<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>标签涉及到的2个JSP页面会被翻译称2个servlet,这2个servlet的内容在执行时进行合并。<br>而include指令是静态引入，涉及到的2个JSP页面会被翻译成一个servlet,其内容是在原文件级别进行合并。</p>
+<p>不管是<a href="jsp:inclued" target="_blank" rel="noopener">jsp:inclued</a>标签，还是include指令，它们都会把2个JSP页面内容合并输出，所以这两个页面不要出现城府的HTML全局架构标签，否则输出给客户端的内容将会是一个歌手换乱的HTML文档。</p>
+<p>[<a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a>]标签用于把请求转发给另外一个资源。<br>语法： &lt;jsp:forward page=”relativeURL |&lt;%=expression%&gt;” /&gt;<br>page属性用于指定引入资源的相对路径，它也可以通过执行一个表达式来获得。</p>
+<p>当使用<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>和<a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a>标签引入或将请求转发给其他资源时，可以使用<a href="jsp:param" target="_blank" rel="noopener">jsp:param</a>标签向这个资源传递参数。<br>语法1：<br>&lt;jsp:include page=”relativeURL | &lt;%=expression%&gt;”&gt;<br>&lt;jsp:param name=”parameterName” value=”parameterVAlue | &lt;%=expression %&gt;” /&gt;<br><br>语法2：<br>&lt;jsp:forward page=”relativeURL | &lt;%=expression%&gt;”&gt;<br>&lt;jsp:param name=”parameterName” value=”parameterVAlue | &lt;%=expression%&gt;” /&gt;<br></p>
+<p><a href="jsp:param" target="_blank" rel="noopener">jsp:param</a>标签的name属性用于指定参数名，value属性用于指定参数值。在<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>和<a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a>标签中可以使用多个<a href="jsp:param" target="_blank" rel="noopener">jsp:param</a>标签来传递多个参数。</p>
+<p>例如如下示例：</p>
+<p>JAction01.jsp代码为：</p>
+  <body>
+    <pre>
+        JSP的动作标签
+        <% request.setattribute("name", "小龙女"); %>
+        <jsp:forward page="/jsp/JAction02.jsp?age=100">
+            <jsp:param value="70" name="weight">
+        </jsp:param></jsp:forward>
+    </%></pre>
+  </body>
+JAction02.jsp代码为：
+  <body>
+      <% out.write("name="+request.getAttribute(" name")); %>
+      <br>
+      age=<%=request.getparameter("age") %>
+      <br>
+      weight=<%=request.getparameter("weight") %>
+  </%=request.getparameter("weight")></%=request.getparameter("age")></%></body>
+页面显示结果为：
+
+
+<p>上面示例，中使用了<a href="jsp:forward" target="_blank" rel="noopener">jsp:forward</a>标签用作请求转发，将结果转发给JAction02.jsp处理，并显示传递过来的值。</p>
+<p>【[jsp:userBean][jsp:setProperty][jsp:getProperty]标签】<br>语法：<br>&lt;jsp:userBean id=”变量名”  class=”类名”&gt;   该语句相当User us=new User();<br>&lt;jsp:setProperty property=”属性” name=”对象名”  name=”客户端传递过来的参数名称” /&gt;  类似于us.getName=request.getAttribute(“name”);<br>&lt;jsp:getProperty property=”属性” name=”对象名” /&gt;相当于将对象的属性值显示在页面上。类似于&lt;%=us.getName() %&gt;</p>
+<p>示例：</p>
+  <body>
+   <form action="<%=" '"+request.getcontextpath()+" jsp juserbing02.jsp'"" %> method="post" >
+   <table border="1">
+       <tr>
+           <td>姓名:</td>
+           <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+           <td>年龄:</td>
+           <td><input type="text" name="age"></td>
+    </tr>
+    <tr>
+           <td>性别:</td>
+           <td><input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女</td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="提交"></td>
+    </tr>
+   </table>
+   </form>
+  </body>
+
+<p>JUserBing02.jsp关键代码为：<br>  <body><br>    <h1>jsp手动封装参数</h1><br>    &lt;%<br>        request.setCharacterEncoding(“UTF-8”);<br>    %&gt;<br>    <!-- 使用jsp代码声明一个类 相当于 Juser juser=new Juser(); 其中id是变量名 class指定的是要什么名的类 --><br>    &lt;jsp:useBean id=”juser” class=”com.gdy.jjsp.Juser”&gt;<br>    <!-- 手动给声明的变量赋值 其中：name指定的是变量名，property指定的是变量的哪个属性，param指定的是客户端传递过来的哪个参数。--><br>    &lt;jsp:setProperty property=”name” name=”juser” param=”name”/&gt;<br>    &lt;jsp:setProperty property=”age” name=”juser” param=”age”/&gt;<br>    &lt;jsp:setProperty property=”sex” name=”juser” param=”sex” /&gt;</body></p>
+<pre><code>&lt;pre&gt;
+    &lt;!-- 使用jsp代码取变量值， name指定变量名，property指定变量的那个属性 --&gt;
+    姓名：&lt;jsp:getProperty property=&quot;name&quot; name=&quot;juser&quot;/&gt;
+    年龄：&lt;jsp:getProperty property=&quot;age&quot; name=&quot;juser&quot;/&gt;
+    性别：&lt;%=juser.getSex() %&gt;
+    地址：&lt;%=juser.getAddress() %&gt;
+&lt;/pre&gt;</code></pre>  
+
+
+<p>java 自定义类Juser代码为：</p>
+<p>package com.gdy.jjsp;</p>
+<p>import java.io.Serializable;</p>
+<p>/**</p>
+<ul>
+<li>创建一个类，方便jsp封装参数</li>
+<li>@author Administrator</li>
+<li></li>
+<li>/<br>public class Juser  implements Serializable{<br>  private String name;//姓名<br>  private int age;//年龄<br>  private String sex;//性别<br>  private String address;//地址<br>  @Override<br>  public String toString() {<pre><code>return &quot;Juser [name=&quot; + name + &quot;, age=&quot; + age + &quot;, sex=&quot; + sex
+        + &quot;, address=&quot; + address + &quot;]&quot;;</code></pre>  }<br>  public String getName() {<pre><code>return name;</code></pre>  }<br>  public void setName(String name) {<pre><code>this.name = name;</code></pre>  }<br>  public int getAge() {<pre><code>return age;</code></pre>  }<br>  public void setAge(int age) {<pre><code>this.age = age;</code></pre>  }<br>  public String getSex() {<pre><code>return sex;</code></pre>  }<br>  public void setSex(String sex) {<pre><code>this.sex = sex;</code></pre>  }<br>  public String getAddress() {<pre><code>return address;</code></pre>  }<br>  public void setAddress(String address) {<pre><code>this.address = address;</code></pre>  }<br>}</li>
+</ul>
+<p>页面显示结果为：</p>
+<p>上述封装方式还可以如下封装</p>
+<pre><code>&lt;h1&gt;jsp自动封装&lt;/h1&gt;
+&lt;pre&gt;
+    &lt;jsp:useBean id=&quot;zduser&quot; class=&quot;com.gdy.jjsp.Juser&quot;&gt;&lt;/jsp:useBean&gt;
+    &lt;!-- 注意 使用property=&quot;*&quot;时，必须页面传递过来的参数在Juser里面都有，且参数名相同 --&gt;
+    &lt;jsp:setProperty property=&quot;*&quot; name=&quot;zduser&quot;/&gt;
+    姓名：&lt;%=zduser.getName() %&gt;
+    年龄：&lt;%=zduser.getAge() %&gt;
+    性别：&lt;%=zduser.getSex() %&gt;
+&lt;/pre&gt;</code></pre><p>这样就简单很多。<br>注意：&lt;jsp:useBean id=”user2” class=”com.gdy.jjsp.Juser” scope=”page”&gt;中 scope默认是存放在page对象中的。如果修改了scope存放对象，那么获取值会有相应的变化。<br>如下：</p>
+<pre><code>&lt;h2&gt;jsp存储，使用session存放&lt;/h2&gt;
+&lt;jsp:useBean id=&quot;user2&quot; class=&quot;com.gdy.jjsp.Juser&quot; scope=&quot;session&quot;&gt;&lt;/jsp:useBean&gt;
+&lt;jsp:setProperty property=&quot;*&quot; name=&quot;user2&quot;/&gt;
+        姓名：&lt;jsp:getProperty property=&quot;name&quot; name=&quot;user2&quot;/&gt;
+        年龄：&lt;jsp:getProperty property=&quot;age&quot; name=&quot;user2&quot;/&gt;
+       性别：&lt;%=user2.getSex() %&gt;
+   &lt;a href=&lt;%=&quot;&apos;&quot;+request.getContextPath()+&quot;/jsp/JUserBing03.jsp&apos;&quot; %&gt;&gt;跳转JUserBing03&lt;/a&gt;</code></pre><p>将页面传递过来的值是有session接收的页面可以正常使用jsp:getProperty来获取。但入过再通过超链传递到达其他页面，那么获取值应该如下：</p>
+<p>JuserBing03.jsp获取session传递过来的代码为：<br>   <pre><br>           获取JuserBing02存储在session里面的数据<br>           <%<br>               Juser user=(Juser)session.getAttribute("user2");<br>           %><br>           <%--<br>           注意，这时不能使用<jsp:getproperty property="name" name="user"> 再来获取user的值了。<br>               只能使用<%=user.getage() %>这种方式来获取值<br>            --%><br>           姓名：<%=user.getname() %><br>           年龄：<%=user.getage() %><br>           性别：<%=user.getsex() %><br>   </%=user.getsex()></%=user.getage()></%=user.getname()></%=user.getage()></jsp:getproperty></%--<br></%<br></pre></p>
+</%=这里写表达式></%>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2019/12/12/JSP和servlet知识点总结/">
+        JSP和servlet知识点总结 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Michael. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
